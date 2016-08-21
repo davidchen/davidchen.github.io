@@ -96,10 +96,6 @@ p {
 	/*background-color: yellow;*/
 }
 
-.euler-anchor-links {
-	padding: 0px;
-}
-
 .euler-anchor-link {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 28px;
@@ -159,6 +155,10 @@ a:hover {
 }
 
 .home-profile-picture {
+	max-height: 200px;
+}
+
+.misc-photo {
 	max-height: 200px;
 }
 
