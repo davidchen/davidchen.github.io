@@ -159,7 +159,11 @@ a:hover {
 }
 
 .misc-photo {
-	max-height: 200px;
+	max-width: 100%;
+}
+
+.top-buffer {
+	margin-top: 30px;
 }
 
 footer.footer {
