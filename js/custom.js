@@ -1,4 +1,7 @@
 $(function(){
+	// load title content
+	$("#topTitleContent").load("../primary-top-title.html");
+
 	// load footer content
 	$("#footerContent").load("../primary-footer.html");
 
