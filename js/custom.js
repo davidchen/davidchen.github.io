@@ -32,7 +32,7 @@ $(document).ready(function() {
 		$(".tag-button").each(function () {
 			var taggedText = $(this).text();
 			$(this).click(function() {
-				window.location = "../projects.html" + "?tagged=" + taggedText;
+				window.location = "../projects" + "?tagged=" + taggedText;
 			});
 		});
 
