@@ -26,6 +26,24 @@ $(document).ready(function() {
 			});
 		});
 
+		// load page title (using the name of the current html document it is on)
+		var newTitle = "";
+		var htmlDocFileName = document.location.pathname;
+		if (htmlDocFileName.includes("/projects/")) {
+			newTitle = " | projects";
+		}
+		else if (htmlDocFileName.includes("/misc/")) {
+			newTitle = " | misc";
+		}
+		else if (htmlDocFileName.includes("/blog/")) {
+			newTitle = " | blog";
+		}
+		else if (htmlDocFileName.includes("/contact/")) {
+			newTitle = " | contact";
+		}
+		document.title = "dchen.io" + newTitle;
+
+
 		// loops through each element with the class ".euler-problem-title"
 		$(".euler-problem-title").each(function (i) {
 			var idCount = i+1;
@@ -53,9 +71,7 @@ $(document).ready(function() {
 					t = $(this).text();
 					contentTags.push(t);
 				});
-        		if ($.inArray(anyTags, contentTags) > -1) { // more than -1 means found in tags array, so do nothing
-        			return;
-        		}
+        		if ($.inArray(anyTags, contentTags) > -1) {} // more than -1 means found in tags array, so do nothing
         		else {
         			$(this).remove();
         		}
