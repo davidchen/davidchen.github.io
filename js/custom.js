@@ -1,100 +1,134 @@
 $(document).ready(function() {
 
 	$(function(){
-		// load title content
-		$("#topTitleContent").load("/resources/primary-top-title.html");
-
-		// load footer content
-		$("#footerContent").load("/resources/primary-footer.html");
-
-		// load copyright - does not show up on page source so don't bother dynamically inserting it
-		// $.ajax({
-		// 	url: "/resources/primary-copyright.html",
-		// 	success: function (data) { $('head').prepend(data); },
-		// 	dataType: 'html'
-		// });
-
-		// load page links
-		$("#homePageLinksContent").load("/resources/primary-page-links.html", function(){
-			// lets user know what page they are currently on
-			var pathname = window.location.pathname;
-			$(".home-page-link").find('a').each(function () {
-				var linktext = $(this).text();
-				if(pathname.indexOf(linktext) >= 0){
-					$(this).before("| ")
-				}
-			});
-		});
 
 		// load page title (using the name of the current html document it is on)
 		var newTitle = "";
+
 		var htmlDocFileName = document.location.pathname;
+
 		if (htmlDocFileName.includes("/projects/")) {
 			newTitle = " | projects";
+			loadGloballyUsedExternalHtml();
+			tagButtonClickFunctionality();
+			taggedProjectPageFunctionality()
+			pageContentTextHrefLink();
+			eulerIdAssignment();
 		}
 		else if (htmlDocFileName.includes("/misc/")) {
 			newTitle = " | misc";
+			loadGloballyUsedExternalHtml();
 		}
 		else if (htmlDocFileName.includes("/blog/")) {
 			newTitle = " | blog";
+			loadGloballyUsedExternalHtml();
+			taggedProjectPageFunctionality()
+			tagButtonClickFunctionality();
+			pageContentTextHrefLink();
 		}
 		else if (htmlDocFileName.includes("/contact/")) {
 			newTitle = " | contact";
+			loadGloballyUsedExternalHtml();
 		}
+
 		document.title = "dchen.io" + newTitle;
-
-
-		// loops through each element with the class ".euler-problem-title"
-		$(".euler-problem-title").each(function (i) {
-			var idCount = i+1;
-			// assigns appropriate id tags for each euler problem (ids are given in order of the problems)
-			$(this).attr("id", "euler"+idCount);
-			// creates anchor links for euler problems up to however many are on page
-			$(".euler-anchor-links").append("<a href='#euler" + idCount + "'><div class='euler-anchor-link'>" + idCount + "</div></a>");
-		});
-
-		// loops through each .tag-button element and adds a jquery click function to each tag button
-		$(".tag-button").each(function () {
-			var taggedText = $(this).text();
-			$(this).click(function() {
-				window.location = "../projects" + "?tagged=" + taggedText;
-			});
-		});
-
-		var anyTags = getUrlParameter('tagged');
-
-		if (typeof anyTags !== 'undefined' && anyTags !== '') {
-			anyTags = anyTags.toLowerCase();
-			$('.page-content-item').each(function () {
-				var contentTags = [];
-				$(this).find(".tag-button").each(function() {
-					t = $(this).text();
-					contentTags.push(t);
-				});
-        		if ($.inArray(anyTags, contentTags) > -1) {} // more than -1 means found in tags array, so do nothing
-        		else {
-        			$(this).remove();
-        		}
-        	});
-
-			var contentItemCount = $('.page-content-item').length;
-
-			if (contentItemCount > 0) {
-				$('.page-content > .row').before("<p>Showing all posts tagged <strong>" + anyTags + "</strong>.</p><br>");
-			}
-			else {
-				$('.page-content > .row').before("<p>There are no posts tagged <strong>" + anyTags + "</strong>.</p><br>");
-			}
-			
-
-
-		}
 
 	});
 });
 
+function tagButtonClickFunctionality() {
+	console.log("This page uses tagButtonClickFunctionality().")
+	
+	// loops through each .tag-button element and adds a jquery click function to each tag button
+	$(".tag-button").each(function () {
+		var taggedText = $(this).text();
+		$(this).click(function() {
+			window.location = "../projects" + "?tagged=" + taggedText;
+		});
+	});
+};
 
-var getUrlParameter = function getUrlParameter(sParam) {
+function loadGloballyUsedExternalHtml() {
+	console.log("This page uses loadGloballyUsedExternalHtml().");
+	
+	// load title content
+	$("#topTitleContent").load("/resources/primary-top-title.html");
+
+	// load footer content
+	$("#footerContent").load("/resources/primary-footer.html");
+
+	// load page links and lets user know what page they are currently on
+	$("#homePageLinksContent").load("/resources/primary-page-links.html", function(){
+	
+		var pathname = window.location.pathname;
+
+		$(".home-page-link").find('a').each(function () {
+			var linktext = $(this).text();
+			if(pathname.indexOf(linktext) >= 0){
+				$(this).before("| ")
+			}
+		});
+	});
+};
+
+function eulerIdAssignment() {
+	console.log("This page uses eulerIdAssignment().");
+	
+	// loops through each element with the class ".euler-problem-title"
+	$(".euler-problem-title").each(function (i) {
+		var idCount = i+1;
+		// assigns appropriate id tags for each euler problem (ids are given in order of the problems)
+		$(this).attr("id", "euler"+idCount);
+		// creates anchor links for euler problems up to however many are on page
+		$(".euler-anchor-links").append("<a href='#euler" + idCount + "'><div class='euler-anchor-link'>" + idCount + "</div></a>");
+	});
+};
+
+function pageContentTextHrefLink() {
+	console.log("This page uses pageContentTextHrefLink().");
+	
+	// gives the same href to page-content-item-text > p as page-content-item-title > h3 > a
+	$(".page-content-item").each(function () {
+		var givenhref = $(this).find(".page-content-item-title > h3 > a").attr("href");
+		$(this).find(".page-content-item-text > p").wrapInner("<a href=" + givenhref + "></a>");
+	});
+};
+
+function taggedProjectPageFunctionality() {
+	console.log("This page uses taggedProjectPageFunctionality().");
+
+	// this function is activated upon receiving a tagged url parameter on the project page.
+	// it basically loads all posts and then deletes the ones that do not have the tag specified by user.
+	var anyTags = getUrlParameter('tagged');
+
+	if (typeof anyTags !== 'undefined' && anyTags !== '') {
+		anyTags = anyTags.toLowerCase();
+		$('.page-content-item').each(function () {
+			var contentTags = [];
+			$(this).find(".tag-button").each(function() {
+				t = $(this).text();
+				contentTags.push(t);
+			});
+    		if ($.inArray(anyTags, contentTags) > -1) {} // more than -1 means found in tags array, so do nothing
+    			else {
+    				$(this).remove();
+    			}
+    		});
+
+		var contentItemCount = $('.page-content-item').length;
+
+		if (contentItemCount > 0) {
+			$('.page-content > .row').before("<p>Showing all posts tagged <strong>" + anyTags + "</strong>.</p><br>");
+		}
+		else {
+			$('.page-content > .row').before("<p>There are no posts tagged <strong>" + anyTags + "</strong>.</p><br>");
+		}
+	}
+};
+
+function getUrlParameter(sParam) {
+	console.log("This page uses getUrlParameter().");
+	
 	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
 	sURLVariables = sPageURL.split('&'),
 	sParameterName,
