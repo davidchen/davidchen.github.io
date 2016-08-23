@@ -2,13 +2,20 @@ $(document).ready(function() {
 
 	$(function(){
 		// load title content
-		$("#topTitleContent").load("../primary-top-title.html");
+		$("#topTitleContent").load("/resources/primary-top-title.html");
 
 		// load footer content
-		$("#footerContent").load("../primary-footer.html");
+		$("#footerContent").load("/resources/primary-footer.html");
+
+		// load copyright - does not show up on page source so don't bother dynamically inserting it
+		// $.ajax({
+		// 	url: "/resources/primary-copyright.html",
+		// 	success: function (data) { $('head').prepend(data); },
+		// 	dataType: 'html'
+		// });
 
 		// load page links
-		$("#homePageLinksContent").load("../primary-page-links.html", function(){
+		$("#homePageLinksContent").load("/resources/primary-page-links.html", function(){
 			// lets user know what page they are currently on
 			var pathname = window.location.pathname;
 			$(".home-page-link").find('a').each(function () {
@@ -42,17 +49,17 @@ $(document).ready(function() {
 			anyTags = anyTags.toLowerCase();
 			$('.page-content-item').each(function () {
 				var contentTags = [];
-    			$(this).find(".tag-button").each(function() {
-    				t = $(this).text();
-    				contentTags.push(t);
-        		});
+				$(this).find(".tag-button").each(function() {
+					t = $(this).text();
+					contentTags.push(t);
+				});
         		if ($.inArray(anyTags, contentTags) > -1) { // more than -1 means found in tags array, so do nothing
         			return;
         		}
         		else {
         			$(this).remove();
         		}
-			});
+        	});
 
 			var contentItemCount = $('.page-content-item').length;
 
@@ -72,16 +79,16 @@ $(document).ready(function() {
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	sURLVariables = sPageURL.split('&'),
+	sParameterName,
+	i;
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? true : sParameterName[1];
+		}
+	}
 };
