@@ -29,6 +29,9 @@ $(document).ready(function() {
 		else if (htmlDocFileName.includes("/contact/")) {
 			newTitle = " | contact";
 			loadGloballyUsedExternalHtml();
+		} 
+		else { // home page
+			loadGloballyUsedExternalHtml();
 		}
 
 		document.title = "dchen.io" + newTitle;
