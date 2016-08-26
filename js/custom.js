@@ -55,14 +55,22 @@ function loadGloballyUsedExternalHtml() {
 	console.log("This page uses loadGloballyUsedExternalHtml().");
 	
 	// load title content
-	$("#topTitleContent").load("/resources/primary-top-title.html");
+	$("#topTitleContent").load("/resources/primary-top-title.html", function(){
+		var pathname = window.location.pathname;
+
+		$(".sm-size-link").each(function () {
+			var linktext = $(this).text();
+			if(pathname.indexOf(linktext) >= 0){
+				$(this).css({"color":"white","background-color":"black"});
+			}
+		});
+	});
 
 	// load footer content
 	$("#footerContent").load("/resources/primary-footer.html");
 
 	// load page links and lets user know what page they are currently on
 	$("#homePageLinksContent").load("/resources/primary-page-links.html", function(){
-	
 		var pathname = window.location.pathname;
 
 		$(".home-page-link").find('a').each(function () {
