@@ -34,6 +34,17 @@ p {
 	margin-top: 35px;
 }
 
+.sm-size-link  {
+	border: 1px black solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sm-size-link:hover {
+	color: white;
+	background-color: black;
+}
+
 .image-and-links, .links-and-content {
 	margin-top: 50px;
 }
