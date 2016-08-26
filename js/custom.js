@@ -76,7 +76,8 @@ function loadGloballyUsedExternalHtml() {
 		$(".home-page-link").find('a').each(function () {
 			var linktext = $(this).text();
 			if(pathname.indexOf(linktext) >= 0){
-				$(this).before("| ")
+				// $(this).before("| ")
+				$(this).css({"color":"white","background-color":"black","padding":"3px"});
 			}
 		});
 	});
