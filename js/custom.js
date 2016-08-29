@@ -10,10 +10,11 @@ $(document).ready(function() {
 		if (htmlDocFileName.includes("/projects/")) {
 			newTitle = " | projects";
 			loadGloballyUsedExternalHtml();
-			tagButtonClickFunctionality();
-			taggedProjectPageFunctionality()
+			tagGrab();
+			taggedProjectPageFunctionality();
 			pageContentTextHrefLink();
 			eulerIdAssignment();
+			tagButtonClickFunctionality();
 		}
 		else if (htmlDocFileName.includes("/misc/")) {
 			newTitle = " | misc";
@@ -39,14 +40,36 @@ $(document).ready(function() {
 	});
 });
 
+
 function tagButtonClickFunctionality() {
 	console.log("This page uses tagButtonClickFunctionality().")
 	
 	// loops through each .tag-button element and adds a jquery click function to each tag button
 	$(".tag-button").each(function () {
 		var taggedText = $(this).text();
+		console.log("click function added for " + taggedText);
 		$(this).click(function() {
 			window.location = "../projects" + "?tagged=" + taggedText;
+		});
+	});
+};
+
+function tagGrab() {
+	console.log("This page uses tagGrab().");
+
+	$(".tag-grab-recipient").each(function () {
+		var postTitle = $(this).find(".page-content-item-title > h3").text();
+		// console.log("Title: " + postTitle);
+		$.get("/projects/index.html", function(HTMLdata) {
+			$(HTMLdata).find(".page-content-item").each(function() {
+				var title = $(this).find(".page-content-item-title > h3 > a").text();
+				var tags = $(this).find(".page-content-item-tags").html();
+				if (title == postTitle) {
+					$(".page-content-item-tags").append(tags);
+					tagButtonClickFunctionality();
+					return;
+				}
+			});
 		});
 	});
 };
@@ -133,10 +156,13 @@ function taggedProjectPageFunctionality() {
 			$('.page-content > .row').before("<p>Showing all posts tagged <strong>" + anyTags + "</strong>.</p><br>");
 		}
 		else {
-			$('.page-content > .row').before("<p>There are no posts tagged <strong>" + anyTags + "</strong>.</p><br>");
+			$('.page-content > .row').before("<p>There are no posts tagged <strong>" + anyTags + "</strong>. <a href='javascript:history.back()'>Click here to go back to previous page.</a></p><br>");
 		}
 	}
 };
+
+
+
 
 function getUrlParameter(sParam) {
 	console.log("This page uses getUrlParameter().");
