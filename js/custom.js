@@ -38,6 +38,10 @@ $(document).ready(function() {
 		document.title = "dchen.io" + newTitle;
 
 	});
+
+	$(function(){
+		$("body").hide().fadeIn(700);
+	});
 });
 
 
