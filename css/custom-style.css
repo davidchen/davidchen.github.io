@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5{
 
 p {
 	font-family: 'Open Sans', sans-serif;
+	color: black;
 }
 
 .title-text {
@@ -45,17 +46,12 @@ p {
 	background-color: black;
 }
 
-.image-and-links, .links-and-content {
+.links-and-content {
 	margin-top: 20px;
 }
 
-.image-and-links > div.home-page-links {
-	/*background-color: red;*/
-}
-
-.links-and-content > div.home-page-links {
-	/*padding-left: 10px;*/
-	/*background-color: pink;*/
+.image-and-links {
+	margin-top: 60px;
 }
 
 .page-content {
@@ -100,7 +96,7 @@ p {
 }
 
 .page-content-item-text {
-	font-weight: 600;
+	
 	padding: 10px;
 	margin-bottom: 5px;
 	border: 1px black solid;
@@ -145,6 +141,10 @@ a:hover {
 
 .project-content h4 {
 	padding-top: 10px;
+}
+
+.home-page-links {
+	padding-left: 0px;
 }
 
 .home-page-link > a {
@@ -199,6 +199,7 @@ footer a:hover {
 	background-color: black;
 	padding: 10px;
 }
+
 
 /*::-webkit-scrollbar {
 	width: 5px;

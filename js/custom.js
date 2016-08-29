@@ -12,9 +12,9 @@ $(document).ready(function() {
 			loadGloballyUsedExternalHtml();
 			tagGrab();
 			taggedProjectPageFunctionality();
+			tagButtonClickFunctionality();
 			pageContentTextHrefLink();
 			eulerIdAssignment();
-			tagButtonClickFunctionality();
 		}
 		else if (htmlDocFileName.includes("/misc/")) {
 			newTitle = " | misc";
