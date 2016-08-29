@@ -51,7 +51,7 @@ function tagButtonClickFunctionality() {
 	// loops through each .tag-button element and adds a jquery click function to each tag button
 	$(".tag-button").each(function () {
 		var taggedText = $(this).text();
-		console.log("click function added for " + taggedText);
+		// console.log("click function added for " + taggedText);
 		$(this).click(function() {
 			window.location = "../projects" + "?tagged=" + taggedText;
 		});
