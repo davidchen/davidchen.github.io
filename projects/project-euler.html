@@ -38,7 +38,6 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
   <script src="/js/highlight.min.js"></script>
   <script src="/js/custom.js"></script>
 
-
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/custom-style.css">
   <link rel="stylesheet" type="text/css" href="/css/highlight-github.css">
@@ -106,12 +105,26 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
               </em></p>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+              <p>We predefine the first two Fibonacci numbers, and then begin our while loop to check the two Fibonacci numbers for evenness. We update the two numbers (the first is assigned to be the third, and the second is assigned to be the fourth, and so on) and check that <code>fib2</code> (the larger of the two) is still under the constraint. If not, then we've reached our solution and we return the sum.</p>
+              <pre><code>def euler2():
+    s = 0  # tracks sum
+    fib1 = 1  # first fib number
+    fib2 = 2  # second fib number
+
+    while fib2 < 4000000:  # does not exceed 4m
+        if fib1 % 2 == 0:  # checks if even. If so, adds to sum.
+            s += fib1
+        if fib2 % 2 == 0:
+            s += fib2
+
+        fib1 += fib2  # updates the 1st fib num
+        fib2 += fib1  # updates the 2nd fib num
+
+    return s</code></pre>
               <p>
-                Answer: example
+                Answer: 4613732
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.0000030 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -123,11 +136,17 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
               </em></p>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+              <pre><code>def euler3():
+    num = 600851475143  # set the number to num
+    for i in range(2,100000):  # assume the max prime < 100000; change if test fails
+        while num % i == 0:  # test if divisible by i
+            num //= i  # if it is prime, divide num by this prime and continue
+            if num == 1 or num == i:  # if 1 or self-divisible: return i
+                return i</code></pre>
               <p>
-                Answer: example
+                Answer: 6857
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.0017860 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -249,7 +268,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the sum of all the primes below two million.
               </em></p>
-              
+
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
               <pre><code>sda</code></pre>
               <p>
