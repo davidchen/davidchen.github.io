@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 	$(function(){
-
+		hljs.initHighlightingOnLoad();
+		console.log("Syntax highlighting enabled.")
+		
 		// load page title (using the name of the current html document it is on)
 		var newTitle = "";
 

@@ -35,9 +35,13 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
   <title>dchen.io</title>
 
   <script src="/js/fa-jq-bs.min.js"></script>
+  <script src="/js/highlight.min.js"></script>
   <script src="/js/custom.js"></script>
+
+
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/custom-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/highlight-github.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body> 
@@ -73,12 +77,25 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <div class="col-xs-12 euler-anchor-links"></div>
               </div>
 
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               <h4 class="euler-problem-title">Problem 1 - Multiples of 3 and 5</h4>
               <p><em>
-                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-                <br><br>
-                Find the sum of all the multiples of 3 or 5 below 1000.
+                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
               </em></p>
+
+              <p>This problem is pretty straightforward. We'll have a variable to keep track of the sum and loop through all the numbers below 1000 and add any of the numbers that match the criteria.</p>
+              <pre><code>def euler1():
+    s = 0  # keeps track of sum
+    for x in range(1, 1000):
+        if x % 3 == 0 or x % 5 == 0:  # if multiple of 3 or 5, add to s
+            s += x
+    return s</code></pre>
+              <p>
+                Answer: 233168
+                <br>
+                Average Runtime: 0.0000893 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
               <h4 class="euler-problem-title">Problem 2 - Even Fibonacci numbers</h4>
               <p><em>
@@ -89,12 +106,30 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
               </em></p>
 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
               <h4 class="euler-problem-title">Problem 3 - Largest prime factor</h4>
               <p><em>
                 The prime factors of 13195 are 5, 7, 13 and 29.
                 <br><br>
                 What is the largest prime factor of the number 600851475143?
               </em></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
               <h4 class="euler-problem-title">Problem 4 - Largest palindrome product</h4>
               <p><em>
@@ -103,12 +138,30 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 Find the largest palindrome made from the product of two 3-digit numbers.
               </em></p>
 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
               <h4 class="euler-problem-title">Problem 5 - Smallest multiple</h4>
               <p><em>
                 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
                 <br><br>
                 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
               </em></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               
               <h4 class="euler-problem-title">Problem 6 - Sum square difference</h4>
               <p><em>
@@ -124,13 +177,31 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
               </em></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               
               <h4 class="euler-problem-title">Problem 7 - 10001st prime</h4>
               <p><em>
                 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
                 <br><br>
-                What is the 10,001st prime number?
+                What is the 10001st prime number?
               </em></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               
               <h4 class="euler-problem-title">Problem 8 - Largest product in a series</h4>
               <p><em>
@@ -140,6 +211,15 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
               </em></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
               <h4 class="euler-problem-title">Problem 9 - Special Pythagorean triplet</h4>
               <p><em>
@@ -154,12 +234,30 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 Find the product a × b × c.
               </em></p>
 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
               <h4 class="euler-problem-title">Problem 10 - Summation of primes</h4>
               <p><em>
                 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
                 <br><br>
                 Find the sum of all the primes below two million.
               </em></p>
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <pre><code>sda</code></pre>
+              <p>
+                Answer: example
+                <br>
+                Average Runtime: !?@#?!@?#! seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
             </div>
