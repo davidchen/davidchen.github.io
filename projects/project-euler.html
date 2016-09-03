@@ -112,7 +112,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
     fib2 = 2  # second fib number
 
     while fib2 < 4000000:  # does not exceed 4m
-        if fib1 % 2 == 0:  # checks if even. If so, adds to sum.
+        if fib1 % 2 == 0:  # checks if even. if so, adds to sum
             s += fib1
         if fib2 % 2 == 0:
             s += fib2
@@ -135,7 +135,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 What is the largest prime factor of the number 600851475143?
               </em></p>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
+              <p>Working off the numerical theory that all positive integers are made up of some number of prime factors, we can simplify any number down to its largest prime by first dividing it down starting from its smaller prime factors. We set the range appropriately depending on how large we may think the max prime is (should not be too large, but we can adjust accordingly). As we loop through, if it turns out our number is divisible at the current iteration, it will continue to divide and set itself as the new quotient until no longer divisible, where it then moves on to the next iteration (next integer). We do this until our original <code>num</code> reaches either 1 or itself, which means we've encountered the largest prime product. As a side note, if we wanted to find <em>all</em> of the prime factors (including the multiples of each one), we'd simply have to implement a count at each iteration and add to a data structure such a dictionary to keep track. This solution, although fast, runs in O(n) and is not the most efficient algorithm.</p>
               <pre><code>def euler3():
     num = 600851475143  # set the number to num
     for i in range(2,100000):  # assume the max prime < 100000; change if test fails
@@ -146,7 +146,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
               <p>
                 Answer: 6857
                 <br>
-                Average Runtime: 0.0017860 seconds
+                Average Runtime: 0.0015565 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
