@@ -260,14 +260,13 @@ a:hover {
 }
 
 .tag-button:focus, .tag-button:active:focus, .tag-button.active:focus {
-	outline: none;
-	outline-style: none;
+	outline-color: black;
 	box-shadow: none;
 }
 
 .tag-button:active:focus {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 }
 
 .home-page-links {
