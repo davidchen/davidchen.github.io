@@ -141,7 +141,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
             num //= i  # if it is prime, divide num by this prime and continue
             if num == 1 or num == i:  # if 1 or self-divisible: return i
                 return i</code></pre>
-              <p>
+              <p> 
                 Answer: 6857
                 <br>
                 Average Runtime: 0.0015565 seconds
@@ -176,7 +176,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
               </em></p>
               <br>
-              <p>Although tempted to simply start at 20 and increment by 20 in a while loop and check each number for divisibility requirements, this is not the most efficient solution. In fact, using this type of approach would take a hefty 12 seconds for the program to output an answer. Instead, we look at the problem and realize that the beginning integer must be the product of all the primes under 20, since those primes can multiply to create any integer under 20. This means that as long the number is divisible by all the primes under 20, it will be divisible by all the numbers under 20 (for example, if a number is divisible by 18, it must mean it is divisible by 9 and 2). Thus, we set our <code>i</code> to be 2 × 3 × 5 × 7 × 11 × 13 × 17 × 19 = 9699690. We check its divisibility for [1,20] and if it is not satisfied, we increment by another 9699690.</p>
+              <p>Although tempted to simply start at 20 and increment by 20 in a while loop and check each number for divisibility requirements, this is not the most efficient solution. In fact, using this type of approach would take a hefty 12 seconds for the program to output an answer. Instead, we look at the problem and realize that the beginning integer must be the product of all the primes under 20, since those primes can multiply to create any integer under 20. This means that as long the number is divisible by all the primes under 20, it will be divisible by all the numbers under 20 (for example, if a number is divisible by 18, it must mean it is divisible by 9 and 2). Thus, we set our <code>i</code> to be 2 × 3 × 5 × 7 × 11 × 13 × 17 × 19 = 9699690. We check its divisibility for [1, 20] and if it is not satisfied, we increment by another 9699690.</p>
               <pre><code>def euler5():
     i = 9699690
     while True:
@@ -205,13 +205,23 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
               </em></p>
+              <br>
+              <p>Use for loops to find both initial numbers, and then subtract.</p>
+              <pre><code>def euler6():
+    sum_squares = squared_sum = 0
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+    for i in range(1, 101):  # keeps track of the first one hundred natural numbers
+        s_1 = i * i  # squares i
+        sum_squares += s_1  # adds the square to the first sum
+        squared_sum += i  # adds i to the second sum in preparation for final squaring
+
+    squared_sum *= squared_sum  # squares the second sum
+
+    return squared_sum - sum_squares  # returns the difference</code></pre>
               <p>
-                Answer: example
+                Answer: 25164150
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.0000088 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               
@@ -221,13 +231,28 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 What is the 10001st prime number?
               </em></p>
+              <br>
+              <p>One method of tackling this problem is simply looping through until we hit the 10001st prime (brute force). The other method is as follows: keep a list of all the primes found starting from 2 and loop indefinitely until we reach a number that is not divisible by any of the numbers within the prime list. If that happens, add that number to the prime list because it must be prime (since all composite numbers are made up of some number of primes). Furthermore, instead of checking through the whole prime list to see if that number is prime, we can check to see if the square root of the unknown number is less than the current prime iteration, i.e., the unknown number is less than the prime squared, which will cut down our search time.</p>
+              <pre><code>def euler7():
+    primes = [2]  # begin list of primes, starting with 2
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+    count = 1
+    for x in range(3, 2000000, 2):  #
+        for p in primes:
+            if x % p == 0:
+                break
+            if x < p * p:
+                primes.append(x)
+                count += 1
+                if count == 10001:
+                    return x
+                break
+
+    return</code></pre>
               <p>
-                Answer: example
+                Answer: 104743
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.0675537 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
               
@@ -239,13 +264,33 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
               </em></p>
+              <br>
+              <p>We implement a sliding window with <code>n = 4</code> because of the adjacency necessity and keep track of the max product found.</p>
+              <pre><code>def euler8():
+    num_str = '73167176531330624919225119674426574742355349194934969835203127745063262395783180169848018694788518438586' \
+              '15607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648' \
+              '95044524452316173185640309871112172238311362229893423380308135336276614282806444486645238749303589072962' \
+              '90491560440772390713810515859307960866701724271218839987979087922749219016997208880937766572733300105336' \
+              '78812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064' \
+              '95514929086256932197846862248283972241375657056057490261407972968652414535100474821663704844031998900088' \
+              '95243450658541227588666881164271714799244429282308634656748139191231628245861786645835912456652947654568' \
+              '28489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987' \
+              '87992724428490918884580156166097919133875499200524063689912560717606058861164671094050775410022569831552' \
+              '0005593572972571636269561882670428252483600823257530420752963450'
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+    greatest_prod = 0
+
+    for index in range(0, len(num_str) - 12):  # iterate from the first number to the 13th from last number
+        tmp_prod = int(num_str[index])  # tmp_prod begins with the starting digit of the 13th adjacent digits
+        for i in range(1, 13):
+            tmp_prod *= int(num_str[index + i])  # tmp_prod updates with the product of all 13 digits
+        greatest_prod = max(greatest_prod, tmp_prod)  # max product updates
+
+    return greatest_prod</code></pre>
               <p>
-                Answer: example
+                Answer: 23514624000
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.0057546 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -261,13 +306,19 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the product a × b × c.
               </em></p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+              <br>
+              <p>This question is solved via brute force by utilizing a triple nested for loop. The outer loop iterates from [335, 999] because c > b > a. The middle loop iterates from 1 until the current value of c minus 1, and the inner loop goes from 1 until the current value of b minus 1. </p>
+              <pre><code>def euler9():
+    for c in range(335, 1000):  # c has to be at least 335 because c > b > a, so if c < 335: 334+333+332 = 999 < 1000
+        for b in range(1, c):
+            for a in range(1, b):
+                if a + b + c == 1000 and\
+                    (a * a) + (b * b) == c * c:  # simple, but we make sure the addition check is first so we don't waste runtime
+                    return a * b * c</code></pre>
               <p>
-                Answer: example
+                Answer: 31875000
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 0.2949078 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -277,13 +328,24 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 <br><br>
                 Find the sum of all the primes below two million.
               </em></p>
+              <br>
+              <p>We use the code for problem 7 in order to quickly find the primes up to two million. We then simply return the sum. Much faster and more efficient algorithms involve implementing the Sieve of Eratosthenes or Sieve of Atkin.</p>
+              <pre><code>def euler10():
+    primes = [2]  # keep track of all primes found up to two million
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti, tempora. Deleniti, consequuntur. Maxime vero dignissimos, illo harum, minima totam! Accusantium, atque laudantium perspiciatis saepe, perferendis itaque dolores vero voluptatibus commodi dicta omnis, eligendi tempora vel voluptates explicabo. Molestias, iusto.</p>
-              <pre><code>sda</code></pre>
+    for test_n in range(3, 2000001, 2):  # check up to the limit using odd numbers beginning from 3
+        for p in primes:  # for each new number, check against current list of primes
+            if test_n % p == 0:  # if divisible by any number in primes, number is known to be composite and loop breaks
+                break
+            if test_n < p * p:  # we only need to loop up to the first prime that is greater than the square root of n
+                primes.append(test_n)  # if non-composite and passes above condition, this must be a prime number
+                break
+
+    return sum(primes)</code></pre>
               <p>
-                Answer: example
+                Answer: 142913828922
                 <br>
-                Average Runtime: !?@#?!@?#! seconds
+                Average Runtime: 2.6625816 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
