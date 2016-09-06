@@ -150,7 +150,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
 
               <h4 class="euler-problem-title">Problem 4 - Largest palindrome product</h4>
               <p><em>
-                A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.
+                A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 * 99. Find the largest palindrome made from the product of two 3-digit numbers.
               </em></p>
               <br>
               <p>No choice here but to brute force through the products of two 3-digit numbers. We can either do one of two things: 1. check every number to see if it's a palindrome after multiplying any 3-digit number with all the 3-digit numbers or 2. a decrementing loop starting from 999<sup>2</sup>=998001 and checking if that product is both a palindrome and a possible product of two 3-digit numbers. I decided to code the former.</p>
@@ -176,7 +176,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
               </em></p>
               <br>
-              <p>Although tempted to simply start at 20 and increment by 20 in a while loop and check each number for divisibility requirements, this is not the most efficient solution. In fact, using this type of approach would take a hefty 12 seconds for the program to output an answer. Instead, we look at the problem and realize that the beginning integer must be the product of all the primes under 20, since those primes can multiply to create any integer under 20. This means that as long the number is divisible by all the primes under 20, it will be divisible by all the numbers under 20 (for example, if a number is divisible by 18, it must mean it is divisible by 9 and 2). Thus, we set our <code>i</code> to be 2 × 3 × 5 × 7 × 11 × 13 × 17 × 19 = 9699690. We check its divisibility for [1, 20] and if it is not satisfied, we increment by another 9699690.</p>
+              <p>Although tempted to simply start at 20 and increment by 20 in a while loop and check each number for divisibility requirements, this is not the most efficient solution. In fact, using this type of approach would take a hefty 12 seconds for the program to output an answer. Instead, we look at the problem and realize that the beginning integer must be the product of all the primes under 20, since those primes can multiply to create any integer under 20. This means that as long the number is divisible by all the primes under 20, it will be divisible by all the numbers under 20 (for example, if a number is divisible by 18, it must mean it is divisible by 9 and 2). Thus, we set our <code>i</code> to be 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 9699690. We check its divisibility for [1, 20] and if it is not satisfied, we increment by another 9699690.</p>
               <pre><code>def euler5():
     i = 9699690
     while True:
@@ -254,7 +254,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
               
               <h4 class="euler-problem-title">Problem 8 - Largest product in a series</h4>
               <p><em>
-                The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
+                The four adjacent digits in the 1000-digit number that have the greatest product are 9 * 9 * 8 * 9 = 5832.
                 <br><br>
                 73167176531330624919225119674...
                 <br><br>
@@ -293,7 +293,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
 
               <h4 class="euler-problem-title">Problem 9 - Special Pythagorean triplet</h4>
               <p><em>
-                A Pythagorean triplet is a set of three natural numbers, a < b < c, for which a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>. For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>. There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a × b × c.
+                A Pythagorean triplet is a set of three natural numbers, a < b < c, for which a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>. For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>. There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a * b * c.
               </em></p>
               <br>
               <p>This question is solved via brute force by utilizing a triple nested for loop. The outer loop iterates from [335, 999] because c > b > a. The middle loop iterates from 1 until the current value of c minus 1, and the inner loop goes from 1 until the current value of b minus 1. </p>
@@ -338,7 +338,7 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
 
               <h4 class="euler-problem-title">Problem 11 - Largest product in a grid</h4>
               <p><em>
-                In the 20×20 grid below, four numbers along a diagonal line have been marked in red (grid is redacted here; view in the code block below). The product of these numbers is 26 × 63 × 78 × 14 = 1788696. What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
+                In the 20*20 grid below, four numbers along a diagonal line have been marked in red (grid is redacted here; view in the code block below). The product of these numbers is 26 * 63 * 78 * 14 = 1788696. What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20*20 grid?
               </em></p>
               <br>
               <p>The hardest part of this problem is converting the grid in the problem into a workable 2D matrix so that we can find the max. For the non-diagonal products, we simply use both a horizontal and vertical sliding window algorithm to generate all possible products and keep track of the max. The diagonal products only require a slightly modified constraint in that the limit to which we loop is if the x and y position of the number we're currently on are both less than 17 (since the max of the numbers we need to multiply is at most 4 units horizontally away or 4 unit vertically away).</p>
@@ -406,18 +406,17 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 We can see that 28 is the first triangle number to have over five divisors. What is the value of the first triangle number to have over five hundred divisors?
               </em></p>
               <br>
-              <p>We take an approach to this problem that isn't obvious at first glance. We know that asdasdasdasd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deleniti soluta, vitae labore fuga officiis placeat, natus ex velit alias rem ullam nisi! Libero veniam sit, odit accusamus pariatur non doloremque corporis. Maiores odit, voluptate sed consequuntur quaerat aliquam voluptates eum, explicabo perspiciatis consequatur aperiam quibusdam hic temporibus cumque architecto.</p>
+              <p>We take an approach to this problem that isn't obvious at first glance. We know that all composite numbers are made up of some multiple or other of primes numbers. This means that all prime numbers must only have two factors at most, so we're searching for the first composite number with more than 500 factors. We are able to calculate the number of factors for any integer by multiplying the powers of each prime factor added by one. For example, we have that the number 196 is made up of two 2s and two 7s (2<sup>2</sup> + 7<sup>2</sup> = 196). We take the two exponents in the factors (2 and 2), add one to each (now becomes 3 and 3), and multiply to get 3 * 3 = 9. This means that 196 has a total of 9 different factors (which, by the way, are 1, 2, 4, 7, 14, 28, 49, 98, and 196). Thus, our program will firstly have to find some primes numbers, and then reduce a given intger by prime factorization, and then calculate the total number of factors in order to receive our answer.</p>
               <pre><code>def euler12():
-    primes_up_to_lim = [2]  # keep track of all primes found up to lim; increase lim as needed
+    primes_up_to_lim = [2]  # all primes found up to lim; increase lim as needed
     lim = 20000
 
     for test_n in range(3, lim + 1, 2):  # check up to the limit using odd numbers beginning from 3
         for p in primes_up_to_lim:  # for each new number, check against current list of primes
-            if test_n % p == 0:  # if divisible by any number in primes, number is known to be composite and loop breaks
+            if test_n % p == 0:  # if divisible by a number in primes, number is composite
                 break
-            if test_n < p * p:  # we only need to loop up to the first prime that is greater than the square root of n
-                primes_up_to_lim.append(
-                    test_n)  # if noncomposite and passes above condition, this must be a prime number
+            if test_n < p * p:  # only need to loop up to the first prime > square root of n
+                primes_up_to_lim.append(test_n)  # if passes above condition, must be a prime
                 break
 
     tri_num = tri_num_count = 0
@@ -451,14 +450,14 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
                 old_f = new_f
 
             product *= dup_count
-            if product >= 500:
+            if product > 500:
                 return tri_num
 
     return</code></pre>
               <p>
-                Answer: example
+                Answer: 76576500
                 <br>
-                Average Runtime: example
+                Average Runtime: 0.9417498 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
