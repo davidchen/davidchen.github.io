@@ -581,10 +581,20 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
 
               <h4 class="euler-problem-title">Problem 14 - Longest Collatz sequence</h4>
               <p><em>
-                example question
+              	The following iterative sequence is defined for the set of positive integers:
+              	<br><br>
+              	n → n/2 (n is even)
+              	<br>
+              	n → 3n + 1 (n is odd)
+              	<br><br>
+              	Using the rule above and starting with 13, we generate the following sequence:
+              	<br><br>
+              	13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+              	<br><br>
+              	It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1. Which starting number, under one million, produces the longest chain?
               </em></p>
               <br>
-              <p>description example</p>
+              <p>We implement a Collatz sequence algorithm and keep track of the number of iterations that the algorithms loops through before hitting the end sequence. From there, we loop through each number under one million and keep track of max iterations as we go along by using a tuple to keep track of our current number and it's corresponding chain length.</p>
               <pre><code>example</code></pre>
               <p>
                 Answer: example
