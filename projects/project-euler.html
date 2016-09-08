@@ -594,12 +594,34 @@ Please don't use my code without my permission. Or just steal it. I don't care. 
               	It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1. Which starting number, under one million, produces the longest chain?
               </em></p>
               <br>
-              <p>We implement a Collatz sequence algorithm and keep track of the number of iterations that the algorithms loops through before hitting the end sequence. From there, we loop through each number under one million and keep track of max iterations as we go along by using a tuple to keep track of our current number and it's corresponding chain length.</p>
-              <pre><code>example</code></pre>
+              <p>We implement a Collatz sequence algorithm and keep track of the number of iterations that the algorithms loops through before hitting the end sequence. From there, we loop through each number under one million and keep track of max iterations as we go along by using a dictionary to keep track of our current number and it's corresponding chain length. Of course, this isn't efficient without one major factor to consider: many of the Collatz sequence share a common path towards the ending. Thus, instead of re-calculating each sequence, we can utilize memoization and check our dictionary to see if the chain length has already been calculated. If it has, we simply add that length to the current iteration length, check if it matches our requirements, and add the new number and its corresponding chain length into our dictionary.</p>
+              <pre><code>def euler14():
+    chain_length_dict = {}
+
+    for num in range(1, 1000001):
+        chain_count = 1
+        tmp_num = num
+        while tmp_num != 1:
+            if tmp_num < num:
+                chain_count += (chain_length_dict[tmp_num] - 1)
+                chain_length_dict[num] = chain_count
+                break
+            elif tmp_num % 2 == 0:  # num is even
+                chain_count += 1
+                tmp_num /= 2
+                # print(' -> {}'.format(tmp_num), end='')
+            else:  # num is odd
+                chain_count += 1
+                tmp_num = 3 * tmp_num + 1
+        if num not in chain_length_dict:
+            chain_length_dict[num] = chain_count
+
+
+    return max(chain_length_dict.keys(), key=(lambda k: chain_length_dict[k]))</code></pre>
               <p>
-                Answer: example
+                Answer: 837799
                 <br>
-                Average Runtime: example
+                Average Runtime: 3.8888390 seconds
               </p>
               <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
