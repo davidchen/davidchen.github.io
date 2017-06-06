@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+  <!--                                                                                                   
+                                                                      ,                                                                                                 
+    :;     :;.    `;:     `.       ..        ....                    @@       `@,          ,;;. @@                                                                      
+  ;@''@; '@@@@#  @@@@@  `#@@    '@@@@        @@@@@'                  +#       ;@         ,@@@@@ @'                                                                      
+ .@  ` @  :  @@ @@` `@::@@@@   @@,           @'  @@`  ,;:``..   .. ,;`      ;;#@        .@@   `.@.,;     ;;   .  ;,                                                     
+ @ ;@@ @     @@ @'  +@# . @@  .@,           `@.  ,@,.@@@@@ @@   @'#@@@`   #@@@@@        @@     ;@#@@@  +@@@@  @.@@@;                                                    
+ @ @`  @,   ;@;+@`.@@@'   @:  #@#@@;        '@`  ,@`@@  +@ @@  :@.  :@.  ;@,  @'       `@+     @@# ;@ ;@`  @:`@@` @+                                                    
+.@.@   @`  :@# @@#@+ @.  :@`  @@+:@@`       #@   '@'@`  @@ +@  @@   '@   @@  `@,       :@:     @@  +@ @#:;@@ ,@; `@;                                                    
+.@ @;, @  '@'  @@@` +@   #@   @+  `@:       @@   @@#@   @# :@` @;   @@   @;  '@        '@.     @'  @@`@@@@'  '@  .@`                                                    
+ @ :+,'@ @@,   @@   @@   @@   @'  '@`       @+  '@:@@  #@:  @,@@    @@  `@: `@@        :@;    .@,  @+`@.     @@  +@                                                     
+ @+  ;@ @@@@#@ '@':@@ .++@@++ @@:;@@       `@+'@@' #@:#@@.  @@@`    @@.+ @@:@@@         @@+'@.;@  `@: @@..;` @+  @@                                                     
+  #@@+  @@@@@@  +@@#  #@@@@@: `@@@'        '@@@+`   @@# @.  @@.     '@@# ;@@:+@         `@@@@`@@  :@` .@@@@``@;  @#                                                                                                                                                                                                                              
+            +           ..            `.                                       ..     ..                 ;'        ..        ..                                         
+           @@#    :#    @@            +@                                      ;@`     @+                 @@       `@:        @'                                         
+            '     @@    @'            @@                                      @'     `@,                 ;:       :@        .@`                                         
+   :##'+ ;#+    ';@#'' `@ '#:  '.  ;' @#:@'           :#@'   '@+` ; ++ #;    @@   ,#@#@  `+@+;,':   ';.+@;     :##@@   ;@#; '@`+#.   ;#+. `' ;#'                        
+  @@+'@@ #'@@  ,#@@#@@ '@@@@@ .@`  @' @#@#@;         @@@@@ .@@#@@ @#+@@#@   :@`  +@#'@@ ;@@'@@ @#  `@;@+#@    @@+'@@ `@@@@@ @@@#@@  @@;@@ .@@@#@.                       
+ #@`  @+   @@    #@    #@' '@`+@  `@..@@  @@        #@.    @@  ,@:@'.@:;@   @#  ,@;  @@`@+  #@ @@  :@   ,@`  '@.  @+ @@`    @@, @@ @@  .@ ;@@ `@:                       
+ @@   @`   @;    @@    @@  #@ @@  '@ +@`  @@        @#    ,@,  `@+@ ;@ #@  #@   @@   @+'@   @@ '@  @@   +@   @#  `@:.@;     @#  @@`@#+@@@ #@  ,@                        
+ @'  @@   .@     @@    @'  @@ @#  @@ #@   @;       .@,    +@`  ;@#@ #@ @' `@,   @@  ,@,@@  `@' ,@`.@,   @@   @'  +@ '@     .@`  @#,@'';`  @#  #@                        
+ @; .@@   +@     @;   `@`  @# @' ;@@ @@  #@   @@   .@'    +@`  @@## @; @. @@    @@  @@`@@  @@:  @:@@    @#   @' .@@ '@.    '@  `@,,@      @#  @@                        
+ @@+@@@   #@'+`  @@+@ '@   @. @@@@@@ @@;@@:  ,@@.   @@@@@ `@@#@@`@: @.`@ +@     @@+@+@ '@#@#@.  @@@     @@'@ @@+@'@ `@@@@@ @@  :@  @@;'@ `@:  @#                        
+ `@+ @+    +@'   ,#@' '+  ,'` :@+ '; ;#@+`    #+     +@#;  .#@'  '``+ ,'`@:      ##,.+  +@; +   ++      ,##: `##`,'   +@+: ''  '+  `+##' .'   ',                        
+    ,@`                                                                 @@                                                                                              
+ @@@@@                                                                                                                                                                  
+ :++,
+
+Please don't use my code without my permission. Or just steal it. I don't care. -Insert crying emoji-. --> 
+<html lang="en">
+<head>                                                                                                                                                                
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Chen</title>
+
+  <script src="/js/fa-jq-bs.min.js"></script>
+  <script src="/js/highlight.min.js"></script>
+  <script src="/js/custom.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/custom-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/highlight-github.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body> 
+  <div class="container">
+    <div class="row text-center title-text" id="topTitleContent"></div>
+    
+    <div class="row links-and-content">
+
+      <div class="home-page-links col-sm-3 text-left hidden-xs" id="homePageLinksContent"></div>
+
+      <div class="page-content col-sm-9">
+
+        <div class="row">
+
+          <!-- Page content begins here. -->
+
+          <div class="page-content-item tag-grab-recipient">
+
+            <!-- Page title -->
+            <div class="page-content-item-title">
+              <h3>Project Euler</h3>
+            </div>
+
+            <!-- Page tags -->
+            <div class="page-content-item-tags">
+            </div>
+
+            <!-- Page text -->
+            <div class="project-content">
+
+              <p>Some questions have been shortened for succinctness. Last updated September 09, 2016.</p>
+              <div class="row">
+                <div class="col-xs-12 euler-anchor-links"></div>
+              </div>
+
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              <h4 class="euler-problem-title">Problem 1 - Multiples of 3 and 5</h4>
+              <p><em>
+                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+              </em></p>
+              <br>
+              <p>This problem is pretty straightforward. We'll have a variable to keep track of the sum and loop through all the numbers below 1000 and add any of the numbers that match the criteria.</p>
+              <pre><code>def euler1():
+    s = 0  # keeps track of sum
+    for x in range(1, 1000):
+        if x % 3 == 0 or x % 5 == 0:  # if multiple of 3 or 5, add to s
+            s += x
+    return s</code></pre>
+              <p>
+                Answer: 233168
+                <br>
+                Average Runtime: 0.0000893 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 2 - Even Fibonacci numbers</h4>
+              <p><em>
+                Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2, the first 10 terms will be:
+                <br><br>
+                1, 2, 3, 5, 8, 13, 21, 34, 55, 89,...
+                <br><br>
+                By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+              </em></p>
+              <br>
+              <p>We predefine the first two Fibonacci numbers, and then begin our while loop to check the two Fibonacci numbers for evenness. We update the two numbers (the first is assigned to be the third, and the second is assigned to be the fourth, and so on) and check that <code>fib2</code> (the larger of the two) is still under the constraint. If not, then we've reached our solution and we return the sum.</p>
+              <pre><code>def euler2():
+    s = 0  # tracks sum
+    fib1 = 1  # first fib number
+    fib2 = 2  # second fib number
+
+    while fib2 < 4000000:  # does not exceed 4m
+        if fib1 % 2 == 0:  # checks if even. if so, adds to sum
+            s += fib1
+        if fib2 % 2 == 0:
+            s += fib2
+
+        fib1 += fib2  # updates the 1st fib num
+        fib2 += fib1  # updates the 2nd fib num
+
+    return s</code></pre>
+              <p>
+                Answer: 4613732
+                <br>
+                Average Runtime: 0.0000030 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 3 - Largest prime factor</h4>
+              <p><em>
+                The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143?
+              </em></p>
+              <br>
+              <p>Working off the numerical theory that all positive integers are made up of some number of prime factors, we can simplify any number down to its largest prime by first dividing it down starting from its smaller prime factors. We set the range appropriately depending on how large we may think the max prime is (should not be too large, but we can adjust accordingly). As we loop through, if it turns out our number is divisible at the current iteration, it will continue to divide and set itself as the new quotient until no longer divisible, where it then moves on to the next iteration (next integer). We do this until our original <code>num</code> reaches either 1 or itself, which means we've encountered the largest prime product. As a side note, if we wanted to find <em>all</em> of the prime factors (including the multiples of each one), we'd simply have to implement a count at each iteration and add to a data structure such a dictionary to keep track. This solution, although fast, runs in O(n) and is not the most efficient algorithm.</p>
+              <pre><code>def euler3():
+    num = 600851475143  # set the number to num
+    for i in range(2,100000):  # assume the max prime < 100000; change if test fails
+        while num % i == 0:  # test if divisible by i
+            num //= i  # if it is prime, divide num by this prime and continue
+            if num == 1 or num == i:  # if 1 or self-divisible: return i
+                return i</code></pre>
+              <p> 
+                Answer: 6857
+                <br>
+                Average Runtime: 0.0015565 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 4 - Largest palindrome product</h4>
+              <p><em>
+                A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 * 99. Find the largest palindrome made from the product of two 3-digit numbers.
+              </em></p>
+              <br>
+              <p>No choice here but to brute force through the products of two 3-digit numbers. We can either do one of two things: 1. check every number to see if it's a palindrome after multiplying any 3-digit number with all the 3-digit numbers or 2. a decrementing loop starting from 999<sup>2</sup>=998001 and checking if that product is both a palindrome and a possible product of two 3-digit numbers. I decided to code the former.</p>
+              <pre><code>def euler4():
+    largest_palindrome = 0
+
+    for i in range(100,1000):  # first three digit number
+        for j in range(100,1000):  # second three digit number
+            test_num = str(i*j)  # makes a string from the product and compares with the reverse
+            if test_num == test_num[::-1] and i*j > largest_palindrome:  # update if greater than last one
+                largest_palindrome = i*j
+
+    return largest_palindrome</code></pre>
+              <p>
+                Answer: 906609
+                <br>
+                Average Runtime: 0.2527045 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 5 - Smallest multiple</h4>
+              <p><em>
+                2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+              </em></p>
+              <br>
+              <p>Although tempted to simply start at 20 and increment by 20 in a while loop and check each number for divisibility requirements, this is not the most efficient solution. In fact, using this type of approach would take a hefty 12 seconds for the program to output an answer. Instead, we look at the problem and realize that the beginning integer must be the product of all the primes under 20, since those primes can multiply to create any integer under 20. This means that as long the number is divisible by all the primes under 20, it will be divisible by all the numbers under 20 (for example, if a number is divisible by 18, it must mean it is divisible by 9 and 2). Thus, we set our <code>i</code> to be 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 9699690. We check its divisibility for [1, 20] and if it is not satisfied, we increment by another 9699690.</p>
+              <pre><code>def euler5():
+    i = 9699690
+    while True:
+        if all(i % j == 0 for j in range(1,21)):  # tests to see if this number is evenly divisible by 1-20
+            return i
+        else:
+            i += 9699690</code></pre>
+              <p>
+                Answer: 232792560
+                <br>
+                Average Runtime: 0.0000365 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              
+              <h4 class="euler-problem-title">Problem 6 - Sum square difference</h4>
+              <p><em>
+                The sum of the squares of the first ten natural numbers is
+                <br><br>
+                1<sup>2</sup> + 2<sup>2</sup> + ... + 10<sup>2</sup> = 385
+                <br><br>
+                The square of the sum of the first ten natural numbers is,
+                <br><br>
+                (1 + 2 + ... + 10)<sup>2</sup> = 55<sup>2</sup> = 3025
+                <br><br>
+                Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640. Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+              </em></p>
+              <br>
+              <p>Use for loops to find both initial numbers, and then subtract.</p>
+              <pre><code>def euler6():
+    sum_squares = squared_sum = 0
+
+    for i in range(1, 101):  # keeps track of the first one hundred natural numbers
+        s_1 = i * i  # squares i
+        sum_squares += s_1  # adds the square to the first sum
+        squared_sum += i  # adds i to the second sum in preparation for final squaring
+
+    squared_sum *= squared_sum  # squares the second sum
+
+    return squared_sum - sum_squares  # returns the difference</code></pre>
+              <p>
+                Answer: 25164150
+                <br>
+                Average Runtime: 0.0000088 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              
+              <h4 class="euler-problem-title">Problem 7 - 10001st prime</h4>
+              <p><em>
+                By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10001st prime number?
+              </em></p>
+              <br>
+              <p>One method of tackling this problem is simply looping through until we hit the 10001st prime (brute force). The other method is as follows: keep a list of all the primes found starting from 2 and loop indefinitely until we reach a number that is not divisible by any of the numbers within the prime list. If that happens, add that number to the prime list because it must be prime (since all composite numbers are made up of some number of primes). Furthermore, instead of checking through the whole prime list to see if that number is prime, we can check to see if the square root of the unknown number is less than the current prime iteration, i.e., the unknown number is less than the prime squared, which will cut down our search time.</p>
+              <pre><code>def euler7():
+    primes = [2]  # begin list of primes, starting with 2
+
+    count = 1
+    for x in range(3, 2000000, 2):  #
+        for p in primes:
+            if x % p == 0:
+                break
+            if x < p * p:
+                primes.append(x)
+                count += 1
+                if count == 10001:
+                    return x
+                break
+
+    return</code></pre>
+              <p>
+                Answer: 104743
+                <br>
+                Average Runtime: 0.0675537 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              
+              <h4 class="euler-problem-title">Problem 8 - Largest product in a series</h4>
+              <p><em>
+                The four adjacent digits in the 1000-digit number that have the greatest product are 9 * 9 * 8 * 9 = 5832.
+                <br><br>
+                73167176531330624919225119674...
+                <br><br>
+                Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+              </em></p>
+              <br>
+              <p>We implement a sliding window with <code>n = 13</code> because of the adjacency necessity and keep track of the max product found.</p>
+              <pre><code>def euler8():
+    num_str = \
+    '73167176531330624919225119674426574742355349194934969835203127745063262395783180169848018694788518438586' \
+    '15607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648' \
+    '95044524452316173185640309871112172238311362229893423380308135336276614282806444486645238749303589072962' \
+    '90491560440772390713810515859307960866701724271218839987979087922749219016997208880937766572733300105336' \
+    '78812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064' \
+    '95514929086256932197846862248283972241375657056057490261407972968652414535100474821663704844031998900088' \
+    '95243450658541227588666881164271714799244429282308634656748139191231628245861786645835912456652947654568' \
+    '28489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987' \
+    '87992724428490918884580156166097919133875499200524063689912560717606058861164671094050775410022569831552' \
+    '0005593572972571636269561882670428252483600823257530420752963450'
+
+    greatest_prod = 0
+
+    for index in range(0, len(num_str) - 12):  # iterate from the first number to the 13th from last number
+        tmp_prod = int(num_str[index])  # tmp_prod begins with the starting digit of the 13th adjacent digits
+        for i in range(1, 13):
+            tmp_prod *= int(num_str[index + i])  # tmp_prod updates with the product of all 13 digits
+        greatest_prod = max(greatest_prod, tmp_prod)  # max product updates
+
+    return greatest_prod</code></pre>
+              <p>
+                Answer: 23514624000
+                <br>
+                Average Runtime: 0.0057546 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 9 - Special Pythagorean triplet</h4>
+              <p><em>
+                A Pythagorean triplet is a set of three natural numbers, a < b < c, for which a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>. For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>. There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a * b * c.
+              </em></p>
+              <br>
+              <p>This question is solved via brute force by utilizing a triple nested for loop. The outer loop iterates from [335, 999] because c > b > a. The middle loop iterates from 1 until the current value of c minus 1, and the inner loop goes from 1 until the current value of b minus 1. </p>
+              <pre><code>def euler9():
+    for c in range(335, 1000):  # c has to be at least 335 because c > b > a; if c < 335: 334+333+332 = 999 < 1000
+        for b in range(1, c):
+            for a in range(1, b):
+                if a + b + c == 1000 and\
+                    (a * a) + (b * b) == c * c:  # make sure the addition check is first as it is faster
+                    return a * b * c</code></pre>
+              <p>
+                Answer: 31875000
+                <br>
+                Average Runtime: 0.2949078 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 10 - Summation of primes</h4>
+              <p><em>
+                The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17. Find the sum of all the primes below two million.
+              </em></p>
+              <br>
+              <p>We use the code for problem 7 in order to quickly find the primes up to two million. We then simply return the sum. Much faster and more efficient algorithms involve implementing the Sieve of Eratosthenes or Sieve of Atkin.</p>
+              <pre><code>def euler10():
+    primes = [2]  # keep track of all primes found up to two million
+
+    for test_n in range(3, 2000001, 2):  # check up to the limit using odd numbers beginning from 3
+        for p in primes:  # for each new number, check against current list of primes
+            if test_n % p == 0:  # if divisible by a number in primes, number is composite and loop breaks
+                break
+            if test_n < p * p:  # only need to loop up to first prime that is greater than square root of n
+                primes.append(test_n)  # if non-composite and passes above condition: must be a prime number
+                break
+
+    return sum(primes)</code></pre>
+              <p>
+                Answer: 142913828922
+                <br>
+                Average Runtime: 2.6625816 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 11 - Largest product in a grid</h4>
+              <p><em>
+                In the 20*20 grid below, four numbers along a diagonal line have been marked in red (grid is redacted here; view in the code block below). The product of these numbers is 26 * 63 * 78 * 14 = 1788696. What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20*20 grid?
+              </em></p>
+              <br>
+              <p>The hardest part of this problem is converting the grid in the problem into a workable 2D matrix so that we can find the max. For the non-diagonal products, we simply use both a horizontal and vertical sliding window algorithm to generate all possible products and keep track of the max. The diagonal products only require a slightly modified constraint in that the limit to which we loop is if the x and y position of the number we're currently on are both less than 17 (since the max of the numbers we need to multiply is at most 4 units horizontally away or 4 unit vertically away).</p>
+              <pre><code>def euler11():
+    max_num = 0
+    numbers = [
+        [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
+        [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0],
+        [81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65],
+        [52, 70, 95, 23, 4, 60, 11, 42, 69, 24, 68, 56, 1, 32, 56, 71, 37, 2, 36, 91],
+        [22, 31, 16, 71, 51, 67, 63, 89, 41, 92, 36, 54, 22, 40, 40, 28, 66, 33, 13, 80],
+        [24, 47, 32, 60, 99, 3, 45, 2, 44, 75, 33, 53, 78, 36, 84, 20, 35, 17, 12, 50],
+        [32, 98, 81, 28, 64, 23, 67, 10, 26, 38, 40, 67, 59, 54, 70, 66, 18, 38, 64, 70],
+        [67, 26, 20, 68, 2, 62, 12, 20, 95, 63, 94, 39, 63, 8, 40, 91, 66, 49, 94, 21],
+        [24, 55, 58, 5, 66, 73, 99, 26, 97, 17, 78, 78, 96, 83, 14, 88, 34, 89, 63, 72],
+        [21, 36, 23, 9, 75, 0, 76, 44, 20, 45, 35, 14, 0, 61, 33, 97, 34, 31, 33, 95],
+        [78, 17, 53, 28, 22, 75, 31, 67, 15, 94, 3, 80, 4, 62, 16, 14, 9, 53, 56, 92],
+        [16, 39, 5, 42, 96, 35, 31, 47, 55, 58, 88, 24, 0, 17, 54, 24, 36, 29, 85, 57],
+        [86, 56, 0, 48, 35, 71, 89, 7, 5, 44, 44, 37, 44, 60, 21, 58, 51, 54, 17, 58],
+        [19, 80, 81, 68, 5, 94, 47, 69, 28, 73, 92, 13, 86, 52, 17, 77, 4, 89, 55, 40],
+        [4, 52, 8, 83, 97, 35, 99, 16, 7, 97, 57, 32, 16, 26, 26, 79, 33, 27, 98, 66],
+        [88, 36, 68, 87, 57, 62, 20, 72, 3, 46, 33, 67, 46, 55, 12, 32, 63, 93, 53, 69],
+        [4, 42, 16, 73, 38, 25, 39, 11, 24, 94, 72, 18, 8, 46, 29, 32, 40, 62, 76, 36],
+        [20, 69, 36, 41, 72, 30, 23, 88, 34, 62, 99, 69, 82, 67, 59, 85, 74, 4, 36, 16],
+        [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54],
+        [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
+    ]
+
+    for i_x in range(0, 20):
+        for i_y in range(0, 17):
+            h_product = numbers[i_x][i_y] * numbers[i_x][i_y + 1] * numbers[i_x][i_y + 2] * numbers[i_x][i_y + 3]
+            v_product = numbers[i_y][i_x] * numbers[i_y + 1][i_x] * numbers[i_y + 2][i_x] * numbers[i_y + 3][i_x]
+            d_product_1 = d_product_2 = 0
+
+            if i_x < 17:
+                d_product_1 = numbers[i_x][i_y] * numbers[i_x + 1][i_y + 1] * numbers[i_x + 2][i_y + 2] * \
+                              numbers[i_x + 3][i_y + 3]
+                d_product_2 = numbers[i_y + 3][i_x] * numbers[i_y + 2][i_x + 1] * numbers[i_y + 1][i_x + 2] * \
+                              numbers[i_y][i_x + 3]
+
+            max_num = max(max_num, h_product, v_product, d_product_1, d_product_2)
+
+    return max_num</code></pre>
+              <p>
+                Answer: 70600674
+                <br>
+                Average Runtime: 0.0003273 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 12 - Highly divisible triangular number</h4>
+              <p><em>
+                The sequence of triangle numbers is generated by adding the natural numbers. So the 7th triangle number would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+                <br><br>
+                Let us list the factors of the first seven triangle numbers:
+                <br><br>
+                1: 1<br>
+                3: 1,3<br>
+                6: 1,2,3,6<br>
+                10: 1,2,5,10<br>
+                15: 1,3,5,15<br>
+                21: 1,3,7,21<br>
+                28: 1,2,4,7,14,28
+                <br><br>
+                We can see that 28 is the first triangle number to have over five divisors. What is the value of the first triangle number to have over five hundred divisors?
+              </em></p>
+              <br>
+              <p>We take an approach to this problem that isn't obvious at first glance. We know that all composite numbers are made up of some multiple or other of primes numbers. This means that all prime numbers must only have two factors at most, so we're searching for the first composite number with more than 500 factors. We are able to calculate the number of factors for any integer by multiplying the powers of each prime factor added by one. For example, we have that the number 196 is made up of two 2s and two 7s (2<sup>2</sup> + 7<sup>2</sup> = 196). We take the two exponents in the factors (2 and 2), add one to each (now becomes 3 and 3), and multiply to get 3 * 3 = 9. This means that 196 has a total of 9 different factors (which, by the way, are 1, 2, 4, 7, 14, 28, 49, 98, and 196). Thus, our program will firstly have to find some primes numbers, and then reduce a given intger by prime factorization, and then calculate the total number of factors in order to receive our answer.</p>
+              <pre><code>def euler12():
+    primes_up_to_lim = [2]  # all primes found up to lim; increase lim as needed
+    lim = 20000
+
+    for test_n in range(3, lim + 1, 2):  # check up to the limit using odd numbers beginning from 3
+        for p in primes_up_to_lim:  # for each new number, check against current list of primes
+            if test_n % p == 0:  # if divisible by a number in primes, number is composite
+                break
+            if test_n < p * p:  # only need to loop up to the first prime > square root of n
+                primes_up_to_lim.append(test_n)  # if passes above condition, must be a prime
+                break
+
+    tri_num = tri_num_count = 0
+
+    for n in range(1, 100000):
+        prime_factors = []
+        tri_num_count += 1
+        tri_num += n
+        tmp_tri_num = tri_num
+
+        while tmp_tri_num != 1:
+            for prime in primes_up_to_lim:
+                if tmp_tri_num % prime == 0:
+                    tmp_tri_num /= prime
+                    prime_factors.append(prime)
+                    break
+
+        product = 0
+        if len(prime_factors) > 0:
+            dup_count = 1
+            product = 1
+            old_f = prime_factors[0]
+
+            for f in prime_factors:
+                new_f = f
+                if new_f == old_f:
+                    dup_count += 1
+                else:
+                    product *= dup_count
+                    dup_count = 2
+                old_f = new_f
+
+            product *= dup_count
+            if product > 500:
+                return tri_num
+
+    return</code></pre>
+              <p>
+                Answer: 76576500
+                <br>
+                Average Runtime: 0.9417498 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 13 - Large sum</h4>
+              <p><em>
+                Work out the first ten digits of the sum of the following one-hundred 50-digit numbers (see code block for all one hundred numbers).
+              </em></p>
+              <br>
+              <p>Add all one hundred numbers. Get the first ten digits. Piece of delicious, creamy, chocolate cake (I'm hungry).</p>
+              <pre><code>def euler13():
+    numbers = [
+        37107287533902102798797998220837590246510135740250,
+        46376937677490009712648124896970078050417018260538,
+        74324986199524741059474233309513058123726617309629,
+        91942213363574161572522430563301811072406154908250,
+        23067588207539346171171980310421047513778063246676,
+        89261670696623633820136378418383684178734361726757,
+        28112879812849979408065481931592621691275889832738,
+        44274228917432520321923589422876796487670272189318,
+        47451445736001306439091167216856844588711603153276,
+        70386486105843025439939619828917593665686757934951,
+        62176457141856560629502157223196586755079324193331,
+        64906352462741904929101432445813822663347944758178,
+        92575867718337217661963751590579239728245598838407,
+        58203565325359399008402633568948830189458628227828,
+        80181199384826282014278194139940567587151170094390,
+        35398664372827112653829987240784473053190104293586,
+        86515506006295864861532075273371959191420517255829,
+        71693888707715466499115593487603532921714970056938,
+        54370070576826684624621495650076471787294438377604,
+        53282654108756828443191190634694037855217779295145,
+        36123272525000296071075082563815656710885258350721,
+        45876576172410976447339110607218265236877223636045,
+        17423706905851860660448207621209813287860733969412,
+        81142660418086830619328460811191061556940512689692,
+        51934325451728388641918047049293215058642563049483,
+        62467221648435076201727918039944693004732956340691,
+        15732444386908125794514089057706229429197107928209,
+        55037687525678773091862540744969844508330393682126,
+        18336384825330154686196124348767681297534375946515,
+        80386287592878490201521685554828717201219257766954,
+        78182833757993103614740356856449095527097864797581,
+        16726320100436897842553539920931837441497806860984,
+        48403098129077791799088218795327364475675590848030,
+        87086987551392711854517078544161852424320693150332,
+        59959406895756536782107074926966537676326235447210,
+        69793950679652694742597709739166693763042633987085,
+        41052684708299085211399427365734116182760315001271,
+        65378607361501080857009149939512557028198746004375,
+        35829035317434717326932123578154982629742552737307,
+        94953759765105305946966067683156574377167401875275,
+        88902802571733229619176668713819931811048770190271,
+        25267680276078003013678680992525463401061632866526,
+        36270218540497705585629946580636237993140746255962,
+        24074486908231174977792365466257246923322810917141,
+        91430288197103288597806669760892938638285025333403,
+        34413065578016127815921815005561868836468420090470,
+        23053081172816430487623791969842487255036638784583,
+        11487696932154902810424020138335124462181441773470,
+        63783299490636259666498587618221225225512486764533,
+        67720186971698544312419572409913959008952310058822,
+        95548255300263520781532296796249481641953868218774,
+        76085327132285723110424803456124867697064507995236,
+        37774242535411291684276865538926205024910326572967,
+        23701913275725675285653248258265463092207058596522,
+        29798860272258331913126375147341994889534765745501,
+        18495701454879288984856827726077713721403798879715,
+        38298203783031473527721580348144513491373226651381,
+        34829543829199918180278916522431027392251122869539,
+        40957953066405232632538044100059654939159879593635,
+        29746152185502371307642255121183693803580388584903,
+        41698116222072977186158236678424689157993532961922,
+        62467957194401269043877107275048102390895523597457,
+        23189706772547915061505504953922979530901129967519,
+        86188088225875314529584099251203829009407770775672,
+        11306739708304724483816533873502340845647058077308,
+        82959174767140363198008187129011875491310547126581,
+        97623331044818386269515456334926366572897563400500,
+        42846280183517070527831839425882145521227251250327,
+        55121603546981200581762165212827652751691296897789,
+        32238195734329339946437501907836945765883352399886,
+        75506164965184775180738168837861091527357929701337,
+        62177842752192623401942399639168044983993173312731,
+        32924185707147349566916674687634660915035914677504,
+        99518671430235219628894890102423325116913619626622,
+        73267460800591547471830798392868535206946944540724,
+        76841822524674417161514036427982273348055556214818,
+        97142617910342598647204516893989422179826088076852,
+        87783646182799346313767754307809363333018982642090,
+        10848802521674670883215120185883543223812876952786,
+        71329612474782464538636993009049310363619763878039,
+        62184073572399794223406235393808339651327408011116,
+        66627891981488087797941876876144230030984490851411,
+        60661826293682836764744779239180335110989069790714,
+        85786944089552990653640447425576083659976645795096,
+        66024396409905389607120198219976047599490197230297,
+        64913982680032973156037120041377903785566085089252,
+        16730939319872750275468906903707539413042652315011,
+        94809377245048795150954100921645863754710598436791,
+        78639167021187492431995700641917969777599028300699,
+        15368713711936614952811305876380278410754449733078,
+        40789923115535562561142322423255033685442488917353,
+        44889911501440648020369068063960672322193204149535,
+        41503128880339536053299340368006977710650566631954,
+        81234880673210146739058568557934581403627822703280,
+        82616570773948327592232845941706525094512325230608,
+        22918802058777319719839450180888072429661980811197,
+        77158542502016545090413245809786882778948721859617,
+        72107838435069186155435662884062257473692284509516,
+        20849603980134001723930671666823555245252804609722,
+        53503534226472524250874054075591789781264330331690
+    ]
+
+    return str(sum(numbers))[0:10]</code></pre>
+              <p>
+                Answer: 5537376230
+                <br>
+                Average Runtime: 0.0000196 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 14 - Longest Collatz sequence</h4>
+              <p><em>
+              	The following iterative sequence is defined for the set of positive integers:
+              	<br><br>
+              	n → n/2 (n is even)
+              	<br>
+              	n → 3n + 1 (n is odd)
+              	<br><br>
+              	Using the rule above and starting with 13, we generate the following sequence:
+              	<br><br>
+              	13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+              	<br><br>
+              	It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1. Which starting number, under one million, produces the longest chain?
+              </em></p>
+              <br>
+              <p>We implement a Collatz sequence algorithm and keep track of the number of iterations that the algorithms loops through before hitting the end sequence. From there, we loop through each number under one million and keep track of max iterations as we go along by using a dictionary to keep track of our current number and it's corresponding chain length. Of course, this isn't efficient without one major factor to consider: many of the Collatz sequence share a common path towards the ending. Thus, instead of re-calculating each sequence, we can utilize memoization and check our dictionary to see if the chain length has already been calculated. If it has, we simply add that length to the current iteration length, check if it matches our requirements, and add the new number and its corresponding chain length into our dictionary.</p>
+              <pre><code>def euler14():
+    chain_length_dict = {}
+
+    for num in range(1, 1000001):
+        chain_count = 1
+        tmp_num = num
+        while tmp_num != 1:
+            if tmp_num < num:
+                chain_count += (chain_length_dict[tmp_num] - 1)
+                chain_length_dict[num] = chain_count
+                break
+            elif tmp_num % 2 == 0:  # num is even
+                chain_count += 1
+                tmp_num /= 2
+                # print(' -> {}'.format(tmp_num), end='')
+            else:  # num is odd
+                chain_count += 1
+                tmp_num = 3 * tmp_num + 1
+        if num not in chain_length_dict:
+            chain_length_dict[num] = chain_count
+
+
+    return max(chain_length_dict.keys(), key=(lambda k: chain_length_dict[k]))</code></pre>
+              <p>
+                Answer: 837799
+                <br>
+                Average Runtime: 3.8888390 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 15 - Lattice paths</h4>
+              <p><em>
+                Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner. How many such routes are there through a 20×20 grid?
+              </em></p>
+              <br>
+              <p>This question does not require any algorithm or coding to solve. We can see that the number of possible routes is directly related to the number of steps it takes to reach from the top left corner to the bottom right corner. For example, on a 2x2 grid we know it will take exactly 4 steps to reach the end. Specifically, it'll always take 2 downward steps and 2 rightward steps. Thus, the number of distinct combinations of these 4 steps would be C(4,2), i.e. 4 choose 2 (you choose 2 of the 4 possible steps to be either right or down, and the remaining two are assumed to be the other direction). This combinatoric method of finding the solution can be applied for any NxN grid, where the number of possible paths is C(2N,N). Thus, in a 20x20 grid, the number of possible path would be C(40,20) = 40 choose 20.</p>
+              <p>
+                Answer: 137846528820
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 16 - Power digit sum</h4>
+              <p><em>
+                2<sup>15</sup> = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26. What is the sum of the digits of the number 2<sup>1000</sup>?
+              </em></p>
+              <br>
+              <p>2<sup>1000</sup> is easily computed by Python, and from there we iterate through the number and return the sum.</p>
+              <pre><code>def euler16():
+    num = str(2 ** 1000)
+    
+    sum = 0
+    for n in num:
+        sum += int(n)
+
+    return sum</code></pre>
+              <p>
+                Answer: 1366
+                <br>
+                Average Runtime: 0.0001300 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+              <h4 class="euler-problem-title">Problem 17 - Number letter counts</h4>
+              <p><em>
+                If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total. If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used? NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
+              </em></p>
+              <br>
+              <p>The solution to this question is different from the others in that we now have to either 1. write our own function that spells out each number to count the letters or 2. use a module that already has that functionality to help us with the problem. Going with the latter, a library known as <code>num2words</code> is imported into our code, making the job a whole lot easier for us. We simply now iterate through the given constraints and remove all spaces and hyphens before adding the letter count of each word to our sum.</p>
+              <pre><code>from num2words import num2words
+def euler17():
+    sum = 0
+    for x in range(1, 1001):
+        word = num2words(x).replace(' ', '').replace('-', '')
+        sum += len(word)
+
+    return sum</code></pre>
+              <p>
+                Answer: 21124
+                <br>
+                Average Runtime: 0.0493037 seconds
+              </p>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            </div>
+          </div>
+
+          <!-- Page content ends here. -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer navbar-fixed-bottom" id="footerContent"></footer>
+
+</body>
+</html></em>

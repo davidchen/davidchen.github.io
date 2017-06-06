@@ -1,0 +1,237 @@
+/* - - - - - - - - FONTS - - - - - - - - */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600';
+
+@font-face {
+    font-family: Circular;
+    font-weight: bold;
+    src: local("Circular"), url("../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Circular;
+    font-weight: normal;
+    src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+/* - - - - - - - - FONTS - - - - - - - - */
+#particle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}
+
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+body {
+    padding-bottom: 100px;
+    /*overflow: auto;*/
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0px;
+    color: black;
+    font-family: 'Circular', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.title-text {
+    margin-top: 35px;
+}
+
+.sm-size-link {
+    border: 1px black solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sm-size-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.links-and-content {
+    margin-top: 20px;
+}
+
+.image-and-links {
+    margin-top: 60px;
+}
+
+.page-content {
+    /*min-height: 600px;*/
+    /*overflow: auto;*/
+}
+
+.page-content-item {
+    padding: 10px 10px 20px;
+    margin-bottom: 5px;
+    /*background-color: cyan;*/
+}
+
+.misc-content {
+    padding: 10px 10px 20px;
+    margin-bottom: 5px;
+    /*background-color: cyan;*/
+}
+
+.misc-content:first-child {
+    padding-top: 0px;
+}
+
+.page-content-item-tags > p {
+    display: inline-block;
+}
+
+.page-content-item-tags > .btn {
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.page-content-item:first-child {
+    padding-top: 0px;
+}
+
+.page-content-item:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+.page-content-item-text {
+
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px black solid;
+    /*background-color: yellow;*/
+}
+
+.euler-anchor-link {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    float: left;
+    text-align: center;
+    margin: 0 7px 7px 0;
+    width: 27px;
+    height: 27px;
+    border: 1px solid black;
+}
+
+.euler-anchor-link:hover {
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+.page-content-item-text a {
+    transition: all 500ms ease;
+}
+
+.page-content-item-text a:hover {
+    font-size: 127%;
+    /*background-color: yellow;*/
+}
+
+.project-content h4 {
+    padding-top: 10px;
+}
+
+.tag-button:focus, .tag-button:active:focus, .tag-button.active:focus {
+    outline-color: black;
+    box-shadow: none;
+}
+
+.tag-button:active:focus {
+    color: black;
+    background-color: white;
+}
+
+.home-page-links {
+    padding-left: 0px;
+}
+
+.home-page-link > a {
+    margin-bottom: 8px;
+    transition: all 0.5s ease;
+}
+
+.home-page-link > a:hover {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.home-page-sublink {
+    font-size: 75%;
+    margin-left: 10px;
+}
+
+.page-selected a {
+    padding: 3px;
+}
+
+.home-profile-picture {
+    max-height: 200px;
+}
+
+.misc-photo {
+    max-width: 100%;
+}
+
+.top-buffer {
+    margin-top: 30px;
+}
+
+footer.footer {
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-top: 1px dotted black;
+}
+
+footer a {
+    margin: 0px 15px;
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+/*::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: none;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #888888;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #666666;
+}*/
