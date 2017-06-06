@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    particlesJS.load('particle', '../js/particlesjs-config.json');
 
 	$(function(){
 		console.log("Syntax highlighting enabled.")
@@ -37,7 +36,8 @@ $(document).ready(function() {
 		} 
 		else { // home page
 			loadGloballyUsedExternalHtml();
-		}
+            particlesJS.load('particle', '../js/particlesjs-config.json');
+        }
 
 		document.title = "David Chen" + newTitle;
 
