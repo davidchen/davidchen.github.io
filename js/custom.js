@@ -37,7 +37,7 @@ $(document).ready(function() {
 			loadGloballyUsedExternalHtml();
 		}
 
-		document.title = "dchen.io" + newTitle;
+		document.title = "David Chen" + newTitle;
 
 	});
 
