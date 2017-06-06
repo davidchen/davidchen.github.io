@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    particlesJS.load('particle', '../js/particlesjs-config.json');
+
 	$(function(){
 		console.log("Syntax highlighting enabled.")
 

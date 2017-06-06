@@ -1,17 +1,27 @@
 /* - - - - - - - - FONTS - - - - - - - - */
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600';
+
 @font-face {
     font-family: Circular;
     font-weight: bold;
     src: local("Circular"), url("../fonts/CircularStd-Bold.otf") format("opentype");
 }
+
 @font-face {
     font-family: Circular;
     font-weight: normal;
     src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype");
 }
-/* - - - - - - - - FONTS - - - - - - - - */
 
+/* - - - - - - - - FONTS - - - - - - - - */
+#particle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
 
 html {
     margin-left: calc(100vw - 100%);
