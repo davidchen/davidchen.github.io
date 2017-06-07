@@ -63,10 +63,6 @@
   font-weight: normal;
   src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype"); }
 /* - - - - - - - - FONTS - - - - - - - - */
-body {
-  background-color: #efefef;
-  overflow: hidden; }
-
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Circular', sans-serif;
   font-weight: bold; }
