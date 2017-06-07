@@ -1,16 +1,158 @@
+/* - - - - - - - - THEME COLORS - - - - - - - - */
+.theme-color-one {
+  color: #2c3e50; }
+
+.theme-color-two {
+  color: #3498db; }
+
+.theme-color-three {
+  color: #3375A7; }
+
+.black-font {
+  color: black; }
+
+/* - - - - - - - - THEME COLORS - - - - - - - - */
+/* - - - - - - - - GRADIENT BACKGROUNDS - - - - - - - - */
+.background-one {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
+  background: #2c3e50;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2c3e50 0%, #3498db 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2c3e50 0%, #3498db 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.background-two {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
+  background: #2c3e50;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2c3e50 0%, #3498db 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2c3e50 0%, #3498db 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50 0%, #3498db 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=0);
+  /* IE6-9 */ }
+
+.background-three {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
+  background: #2c3e50;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #2c3e50 0%, #3498db 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #2c3e50 0%, #3498db 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #2c3e50 0%, #3498db 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=1);
+  /* IE6-9 */ }
+
+/* - - - - - - - - GRADIENT BACKGROUNDS - - - - - - - - */
 /* - - - - - - - - FONTS - - - - - - - - */
-
 @font-face {
-    font-family: Circular;
-    font-weight: bold;
-    src: local("Circular"), url("../fonts/CircularStd-Bold.otf") format("opentype");
-}
-
+  font-family: Circular;
+  font-weight: bold;
+  src: local("Circular"), url("../fonts/CircularStd-Bold.otf") format("opentype"); }
 @font-face {
-    font-family: Circular;
-    font-weight: normal;
-    src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype");
-}
-
+  font-family: Circular;
+  font-weight: normal;
+  src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype"); }
 /* - - - - - - - - FONTS - - - - - - - - */
+body, html {
+  overflow: hidden; }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Circular', sans-serif;
+  font-weight: bold; }
+
+a {
+  font-weight: normal;
+  color: inherit;
+  text-decoration: none; }
+  a:hover, a:visited, a:active, a:focus {
+    text-decoration: none;
+    color: inherit; }
+  a:hover {
+    font-weight: bold; }
+
+.container-fluid {
+  height: 100vh;
+  padding-bottom: 100px; }
+
+.information {
+  position: fixed; }
+
+.section-card {
+  color: white;
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: aquamarine; }
+  .section-card p {
+    font-weight: normal; }
+
+.cards-column {
+  height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: 100px; }
+
+.cards-column::-webkit-scrollbar {
+  display: none; }
+
+.section-card1 {
+  background-color: aquamarine; }
+
+.section-card2 {
+  background-color: coral; }
+
+.section-card3 {
+  background-color: grey; }
+
+.section-card4 {
+  background-color: #4a8059; }
+
+.section-card5 {
+  background-color: #806657; }
+
+.section-card6 {
+  background-color: #438073; }
+
+.section-card7 {
+  background-color: #80345f; }
+
+.section-card8 {
+  background-color: #274dbf; }
+
+.section-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+.section-box {
+  padding: 10px;
+  margin: 10px 0px; }
+
+.section-box-name {
+  color: #3498db; }
+
+.section-box-content {
+  font-weight: normal; }
+
+.footer {
+  position: relative;
+  margin-top: -50px;
+  /* negative value of footer height */
+  height: 50px;
+  clear: both; }
+  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p {
+    text-transform: uppercase;
+    font-size: 75%;
+    line-height: 50px;
+    margin: 0; }
+
+/*# sourceMappingURL=custom.css.map */
