@@ -1,10 +1,13 @@
+$color-one: #283048;
+$color-two: #3d72b4;
+
 /* - - - - - - - - THEME COLORS - - - - - - - - */
 .theme-color-one {
-	color: #2c3e50;
+	color: $color-one;
 }
 
 .theme-color-two {
-	color: #3498db;
+	color: $color-two;
 }
 
 .theme-color-three {
@@ -19,30 +22,30 @@
 
 /* - - - - - - - - GRADIENT BACKGROUNDS - - - - - - - - */
 .background-one {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
-	background: #2c3e50; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #2c3e50 0%, #3498db 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #2c3e50 0%, #3498db 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-one+0,3498db+100 */
+	background: $color-one; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, $color-one 0%, $color-two 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, $color-one 0%, $color-two 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, $color-one 0%, $color-two 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
 .background-two {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
-	background: #2c3e50; /* Old browsers */
-	background: -moz-linear-gradient(top, #2c3e50 0%, #3498db 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #2c3e50 0%, #3498db 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #2c3e50 0%, #3498db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=0); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-one+0,3498db+100 */
+	background: $color-one; /* Old browsers */
+	background: -moz-linear-gradient(top, $color-one 0%, $color-two 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color-one 0%, $color-two 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color-one 0%, $color-two 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=0); /* IE6-9 */
 }
 
 .background-three {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,3498db+100 */
-	background: #2c3e50; /* Old browsers */
-	background: -moz-linear-gradient(left, #2c3e50 0%, #3498db 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #2c3e50 0%, #3498db 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #2c3e50 0%, #3498db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c3e50', endColorstr='#3498db', GradientType=1); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-one+0,3498db+100 */
+	background: $color-one; /* Old browsers */
+	background: -moz-linear-gradient(left, $color-one 0%, $color-two 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, $color-one 0%, $color-two 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, $color-one 0%, $color-two 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=1); /* IE6-9 */
 }
 
 /* - - - - - - - - GRADIENT BACKGROUNDS - - - - - - - - */
@@ -62,7 +65,8 @@
 
 /* - - - - - - - - FONTS - - - - - - - - */
 
-body, html {
+body {
+	background-color: #efefef;
 	overflow: hidden;
 }
 
@@ -72,16 +76,29 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
-	font-weight: normal;
 	color: inherit;
 	text-decoration: none;
+
 
 	&:hover, &:visited, &:active, &:focus {
 		text-decoration: none;
 		color: inherit;
 	}
 
+
+}
+
+.link {
+	font-weight: normal;
+	font-size: 0.85rem;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+
 	&:hover {
+		padding-left: 10px;
 		font-weight: bold;
 	}
 }
@@ -93,96 +110,59 @@ a {
 
 .information {
 	position: fixed;
+
 }
 
 .content {
-	//border-left: black dotted 1px;
+	height: 100vh;
+	//background-color: white;
+	//border-left: 1px solid $color-two;
+}
+
+
+.section-card{
+	color: black;
+	margin-top: 50px;
+
 
 }
 
-.section-card {
-	color: white;
-	margin-bottom: 25px;
-	padding: 20px;
+.section-card:first-child {
+	margin-top: 0px;
+}
 
-	p {
-		font-weight: normal;
+.section-card-title {
+	color: black;
+	padding: 10px;
+	border: 1px solid $color-two;
+
+	h1,h2,h3,h4,h5,p {
+		margin: 0px;
 	}
-
-	background-color: aquamarine;
 }
 
+.section-header {
+	color: black;
+	padding: 10px 0px 10px 10px;
+	//border-bottom: 1px dotted $color-two;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+}
 
+.section-desc {
+	padding-left: 10px;
+	font-weight: normal;
+}
 
 .cards-column {
-	height: 100vh;
+	height: 80vh;
 	overflow-y: scroll;
-	margin-bottom: 100px;
-
 }
 
 .cards-column::-webkit-scrollbar {
 	display: none;
 }
 
-.section-card1 {
-	background-color: aquamarine;
-}
-
-.section-card2 {
-	background-color: coral;
-}
-
-.section-card3 {
-	background-color: grey;
-}
-
-.section-card4 {
-	background-color: #4a8059;
-}
-
-.section-card5 {
-	background-color: #806657;
-}
-
-.section-card6 {
-	background-color: #438073;
-}
-
-.section-card7 {
-	background-color: #80345f;
-}
-
-.section-card8 {
-	background-color: #274dbf;
-}
-
-
-
-
-
-
-
-.section-header {
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
-.section-box {
-	padding: 10px;
-	margin: 10px 0px;
-	//border: #3498db dotted 1px;
-}
-
-.section-box-name {
-	color: #3498db;
-}
-
-.section-box-content {
-	font-weight: normal;
-}
 
 .footer {
 	position: relative;
@@ -196,4 +176,35 @@ a {
 		line-height: 50px;
 		margin: 0;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing-info {
+}
+
+.landing-name {
+	font-size: 10rem;
+
 }
