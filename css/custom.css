@@ -63,9 +63,6 @@
   font-weight: normal;
   src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype"); }
 /* - - - - - - - - FONTS - - - - - - - - */
-body {
-  background-attachment: fixed; }
-
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Circular', sans-serif;
   font-weight: bold; }
@@ -90,60 +87,15 @@ a {
     font-weight: bold; }
 
 .container-fluid {
-  background-attachment: fixed;
-  height: 100vh;
-  padding-bottom: 100px; }
-
-.information {
-  position: fixed; }
-
-.content {
   height: 100vh; }
 
-.section-card {
-  color: black;
-  margin-top: 50px; }
-
-.section-card:first-child {
-  margin-top: 0px; }
-
-.section-card-title {
-  color: black;
-  padding: 10px;
-  border: 1px solid #3d72b4; }
-  .section-card-title h1, .section-card-title h2, .section-card-title h3, .section-card-title h4, .section-card-title h5, .section-card-title p {
-    margin: 0px; }
-
-.section-header {
-  color: black;
-  padding: 10px 0px 10px 10px;
-  font-size: 0.85rem;
-  text-transform: uppercase; }
-
-.section-desc {
-  padding-left: 10px;
-  font-weight: normal; }
-
-.cards-column {
-  height: 80vh;
-  overflow-y: scroll; }
-
-.cards-column::-webkit-scrollbar {
-  display: none; }
-
-.footer {
-  position: relative;
-  margin-top: -50px;
-  /* negative value of footer height */
-  height: 50px;
-  clear: both; }
-  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p {
-    text-transform: uppercase;
-    font-size: 75%;
-    line-height: 50px;
-    margin: 0; }
-
-.landing-name {
-  font-size: 10rem; }
+#particles-js {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  overflow: hidden; }
 
 /*# sourceMappingURL=custom.css.map */
