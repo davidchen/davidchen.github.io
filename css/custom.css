@@ -91,7 +91,7 @@ a {
 
 .container-fluid {
   height: 100vh;
-  padding: 20px; }
+  padding: 20px 0px; }
 
 #particles-js {
   height: 120vh;
