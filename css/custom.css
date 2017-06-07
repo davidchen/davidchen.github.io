@@ -87,7 +87,8 @@ a {
     font-weight: bold; }
 
 .container-fluid {
-  height: 100vh; }
+  height: 100vh;
+  padding: 20px; }
 
 #particles-js {
   height: 100vh;
