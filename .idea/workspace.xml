@@ -1,66 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="495dfc11-31b6-413b-9d74-6408230fc5ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/blog/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/contact/Resume David Chen Updated 9.21.2016.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/contact/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/custom-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/fa-de05a4e1f9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-ascetic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-default.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-github.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/CircularStd-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/CircularStd-Book.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/copyright msg image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/dchen-io-screen-previews.ai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/prof_pic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-jq-bs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-stats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-webfontloader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fontawesome.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/highlight.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/particles.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/index-original.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-1.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-5.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-6.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/example-test-project.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/project-euler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-copyright.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-page-links.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-top-title.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index - backup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index-2.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="495dfc11-31b6-413b-9d74-6408230fc5ab" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -308,15 +249,15 @@
       <workItem from="1496811204015" duration="350000" />
       <workItem from="1496811629634" duration="3511000" />
       <workItem from="1496949506260" duration="1053000" />
-      <workItem from="1496987261505" duration="117000" />
+      <workItem from="1496987261505" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5919000" />
+    <option name="totallyTimeSpent" value="6067000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
