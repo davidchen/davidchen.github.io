@@ -2,8 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="495dfc11-31b6-413b-9d74-6408230fc5ab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/contact/Resume David Chen Updated 9.21.2016.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/contact/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/custom-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/fa-de05a4e1f9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-ascetic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-default.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/css/highlight-github.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/CircularStd-Bold.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/CircularStd-Book.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/copyright msg image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/dchen-io-screen-previews.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/images/prof_pic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-jq-bs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-stats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fa-webfontloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/fontawesome.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/highlight.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/js/particles.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/index-original.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-1.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-4.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-5.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-6.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/misc/photography/img-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/example-test-project.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/projects/project-euler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-copyright.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-page-links.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/[old version - do not edit]/resources/primary-top-title.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index - backup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index-2.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/particlesjs-config.json" afterPath="$PROJECT_DIR$/js/particlesjs-config.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +72,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -36,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="particlesjs-config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="particlesjs-config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/particlesjs-config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
@@ -99,8 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,7 +183,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,15 +307,16 @@
       <workItem from="1496810264401" duration="888000" />
       <workItem from="1496811204015" duration="350000" />
       <workItem from="1496811629634" duration="3511000" />
-      <workItem from="1496949506260" duration="454000" />
+      <workItem from="1496949506260" duration="1053000" />
+      <workItem from="1496987261505" duration="117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5203000" />
+    <option name="totallyTimeSpent" value="5919000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,8 +327,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -282,8 +339,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -303,6 +360,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/particlesjs-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -372,14 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -392,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -400,6 +472,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding />
         </state>
       </provider>
