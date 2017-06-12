@@ -89,15 +89,13 @@ a {
 .section {
   min-height: 100vh; }
 
-.section-half {
-  min-height: 50vh; }
-
 .section-title {
   text-align: center;
   margin: 40px 0px; }
 
-#landing, #projects {
-  border-bottom: 1px lightgray dotted; }
+#landing, #projects, #contact {
+  border-bottom: 1px lightgray dotted;
+  padding-bottom: 50px; }
 
 .project-card {
   margin-bottom: 50px;
