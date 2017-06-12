@@ -65,11 +65,9 @@ $color-two: #fff;
 
 /* - - - - - - - - FONTS - - - - - - - - */
 
-body {
-	overflow: hidden;
-}
 
 h1, h2, h3, h4, h5, h6, p {
+	color: black;
 	font-family: 'Circular', sans-serif;
 	font-weight: bold;
 }
@@ -102,22 +100,54 @@ a {
 	}
 }
 
-.container-fluid {
-	overflow: hidden;
-	height: 100vh;
-	padding: 20px 0px;
+
+.section {
+	min-height: 100vh;
+
+	.section-title {
+		text-align: center;
+		margin: 40px 0px;
+	}
+}
+
+
+#landing {
+	border-bottom: 1px lightgray dotted;
+}
+
+#projects {
+	//background-color: #faf2cc;
+}
+
+.project-card {
+
+	margin-bottom: 50px;
+	border: 1px solid lightgray;
+
+	.project-info, .project-image {
+		padding: 25px;
+	}
+
+	.project-stack {
+		font-size: .8rem;
+	}
+
+	.project-link {
+		font-size: .8rem;
+		display: inline-block;
+		padding: 3px 10px;
+		border: 1px solid gray;
+	}
 }
 
 #particles-js {
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -10;
-	overflow: hidden;
+	background-color: white;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:0;
 }
-
-
 
 
