@@ -88,9 +88,13 @@ a {
 
 .section {
   min-height: 100vh; }
-  .section .section-title {
-    text-align: center;
-    margin: 40px 0px; }
+
+.section-half {
+  min-height: 50vh; }
+
+.section-title {
+  text-align: center;
+  margin: 40px 0px; }
 
 #landing, #projects {
   border-bottom: 1px lightgray dotted; }
