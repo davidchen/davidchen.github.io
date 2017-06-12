@@ -75,17 +75,16 @@ a {
     text-decoration: none;
     color: inherit; }
 
-.link {
-  font-weight: normal;
+.link a {
   font-size: 0.85rem;
   -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s; }
-  .link:hover {
-    padding-left: 10px;
-    font-weight: bold; }
+  .link a:hover {
+    font-size: 1rem;
+    padding-left: 20px; }
 
 .section {
   min-height: 100vh; }
@@ -104,10 +103,11 @@ a {
   .project-card .project-stack {
     font-size: .8rem; }
   .project-card .project-link {
-    font-size: .8rem;
+    color: white;
+    background-color: black;
+    font-size: .65rem;
     display: inline-block;
-    padding: 3px 10px;
-    border: 1px solid gray; }
+    padding: 3px 10px; }
 
 #particles-js {
   background-color: white;
