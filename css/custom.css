@@ -92,7 +92,7 @@ a {
     text-align: center;
     margin: 40px 0px; }
 
-#landing {
+#landing, #projects {
   border-bottom: 1px lightgray dotted; }
 
 .project-card {
