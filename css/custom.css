@@ -63,8 +63,10 @@
   font-weight: normal;
   src: local("Circular"), url("../fonts/CircularStd-Book.otf") format("opentype"); }
 /* - - - - - - - - FONTS - - - - - - - - */
+body {
+  color: black; }
+
 h1, h2, h3, h4, h5, h6, p {
-  color: black;
   font-family: 'Circular', sans-serif;
   font-weight: bold; }
 
@@ -94,12 +96,17 @@ a {
   margin: 40px 0px; }
 
 #landing, #projects, #contact {
-  border-bottom: 1px lightgray dotted;
+  border-bottom: 1px black solid;
   padding-bottom: 50px; }
+
+#contact {
+  font-weight: normal;
+  color: white;
+  background-color: black; }
 
 .project-card {
   margin-bottom: 50px;
-  border: 1px solid lightgray; }
+  border: 1px solid black; }
   .project-card .project-info, .project-card .project-image {
     padding: 25px; }
   .project-card .project-stack {

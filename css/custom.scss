@@ -65,8 +65,11 @@ $color-two: #fff;
 
 /* - - - - - - - - FONTS - - - - - - - - */
 
-h1, h2, h3, h4, h5, h6, p {
+body {
 	color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Circular', sans-serif;
 	font-weight: bold;
 }
@@ -110,9 +113,14 @@ a {
 }
 
 #landing, #projects, #contact {
-	border-bottom: 1px lightgray dotted;
+	border-bottom: 1px black solid;
 	padding-bottom: 50px;
+}
 
+#contact {
+	font-weight: normal;
+	color: white;
+	background-color: black;
 }
 
 #projects {
@@ -122,7 +130,7 @@ a {
 .project-card {
 
 	margin-bottom: 50px;
-	border: 1px solid lightgray;
+	border: 1px solid black;
 
 	.project-info, .project-image {
 		padding: 25px;
