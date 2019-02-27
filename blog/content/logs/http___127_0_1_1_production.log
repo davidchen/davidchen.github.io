@@ -1,0 +1,6 @@
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":40,"msg":"Theme's file locales/en.json not found. ","time":"2018-11-11T01:28:27.672Z","v":0}
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":30,"msg":"Ghost is running in production... ","time":"2018-11-11T01:28:30.255Z","v":0}
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":30,"msg":"Your blog is now available on http://127.0.1.1/ ","time":"2018-11-11T01:28:30.256Z","v":0}
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":30,"msg":"Ctrl+C to shut down ","time":"2018-11-11T01:28:30.256Z","v":0}
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":30,"msg":"Ghost boot 16.076s ","time":"2018-11-11T01:28:30.271Z","v":0}
+{"name":"Log","hostname":"ip-172-31-69-29","pid":2502,"level":40,"msg":"Ghost has shut down ","time":"2018-11-11T01:29:17.695Z","v":0}
