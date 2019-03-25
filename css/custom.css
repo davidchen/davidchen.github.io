@@ -23,7 +23,7 @@
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #fff 0%, #fff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$color-one", endColorstr="$color-two", GradientType=1);
   /* IE6-9 fallback on horizontal gradient */ }
 
 .background-two {
@@ -36,7 +36,7 @@
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #fff 0%, #fff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$color-one", endColorstr="$color-two", GradientType=0);
   /* IE6-9 */ }
 
 .background-three {
@@ -49,7 +49,7 @@
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #fff 0%, #fff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$color-one", endColorstr="$color-two", GradientType=1);
   /* IE6-9 */ }
 
 /* - - - - - - - - GRADIENT BACKGROUNDS - - - - - - - - */
@@ -67,7 +67,7 @@ body {
   color: black; }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Circular', sans-serif;
+  font-family: "Circular", sans-serif;
   font-weight: bold; }
 
 a {
@@ -75,7 +75,8 @@ a {
   text-decoration: none; }
   a:hover, a:visited, a:active, a:focus {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    font-weight: bold; }
 
 .link a {
   font-size: 0.85rem;
@@ -99,23 +100,32 @@ a {
   padding-bottom: 50px; }
 
 #contact {
-  font-weight: normal;
-  color: white;
-  background-color: black; }
+  font-weight: bold;
+  color: black; }
+
+.container-fluid {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1)); }
 
 .project-card {
   margin-bottom: 50px;
   border: 1px solid black; }
   .project-card .project-info, .project-card .project-image {
     padding: 25px; }
+  .project-card .project-image img {
+    border: 1px solid gray; }
   .project-card .project-stack {
-    font-size: .8rem; }
+    font-family: "Courier New", monospace;
+    margin-bottom: 0; }
   .project-card .project-link {
     color: white;
     background-color: black;
     font-size: .65rem;
     display: inline-block;
     padding: 3px 10px; }
+
+.contact-link {
+  font-family: "Courier New", monospace;
+  font-weight: normal; }
 
 #particles-js {
   background-color: white;
