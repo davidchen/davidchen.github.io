@@ -93,10 +93,9 @@ a {
 
 .section-title {
   text-align: center;
-  margin: 40px 0px; }
+  margin: 40px 0; }
 
 #landing, #projects, #contact {
-  border-bottom: 1px black solid;
   padding-bottom: 50px; }
 
 #contact {
@@ -120,11 +119,10 @@ a {
 
 #particles-js {
   background-color: white;
-  position: absolute;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 0; }
 
 /*# sourceMappingURL=custom.css.map */
