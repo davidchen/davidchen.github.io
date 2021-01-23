@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SiteHead from "../components/siteHead"
 
 const NotFound = () => {
   return (
     <Layout>
-      <Head title="404" />
+      <SiteHead title="404" />
       <h1>Page not found</h1>
       <Link to="/">Head home</Link>
     </Layout>
