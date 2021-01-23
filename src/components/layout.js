@@ -1,16 +1,8 @@
 import React from "react"
-import Navbar from "./navbar"
-import Footer from "../components/footer"
 import "../styles/index.scss"
 
-const Layout = props => {
-  return {}
-
-  //   {/*<Navbar />*/}
-  //   {/*{props.children}*/}
-  //
-  //
-  // {/*<Footer />*/}
+const Layout = () => {
+  return <div>test layout</div>
 }
 
 export default Layout

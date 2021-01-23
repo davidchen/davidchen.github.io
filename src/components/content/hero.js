@@ -2,8 +2,8 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <div className="row hero-container-row">
-      <div className="col my-auto hero-container-col">
+    <div className="row hero-container-row container-row">
+      <div className="col my-auto">
         <h2 className="hero-intro-hello">Hello, it's me</h2>
         <h1 className="hero-intro-name">David Chen.</h1>
         <h2 className="hero-intro-snippet">

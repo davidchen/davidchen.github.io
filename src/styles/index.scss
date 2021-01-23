@@ -3,12 +3,40 @@
 @import "../css/typography";  // imports all the local fonts defined in typography.scss
 @import "../css/colors";  // imports all the colors for our app
 
+* {  // default font across everything
+  font-family: Circular, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+}
+
 // LOGOBAR STYLES
 .logobar-logo {
   max-width: 40px;
 }
 
 // NAVBAR STYLES
+.nav-link-button {
+  background-color: white;
+  padding: 5px 15px;
+  border: 1px white solid;
+  border-radius: 5%;
+  &:hover {
+    color: white;
+    background-color: $primary-600;
+    border-color: $primary-600;
+  }
+  .nav-link {
+    padding: 0;
+  }
+}
+
+.nav-button-active {
+  background-color: red;
+}
+
 .nav-link {
   font-size: 1.1rem;
   font-family: Circular, sans-serif;
@@ -16,17 +44,17 @@
   margin: 0;
   padding: 0 0 5px 0;
   color: $primary-300;
-  &:hover {
-    color: $primary-600;
-  }
+
 }
 
 
-// CONTENT STYLES
-// [HERO]
-.hero-container-row {
+// CONTENT STYLES - all container rows should have 100vh
+.container-row {
   min-height: 100vh;
+  border: 1px black dashed; // remove after finalized
 }
+
+// [HERO]
 .hero-intro-hello {
   font-family: Circular, sans-serif;
   font-weight: bold;
@@ -42,4 +70,12 @@
   font-weight: bold;
   font-size: 2.5rem;
   color: $primary-200;
+}
+
+// [ABOUT]
+.about-container-row {
+  min-height: 100vh;
+}
+.about-me-image {
+  max-width: 300px;
 }

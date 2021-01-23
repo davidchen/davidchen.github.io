@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import Head from "../components/head"
 import Navbar from "../components/navbar"
 import Content from "../components/content"
 import Logobar from "../components/logobar"

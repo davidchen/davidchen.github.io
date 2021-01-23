@@ -1,15 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SiteHead from "../components/siteHead"
 
 const ContactPage = () => {
   return (
     <Layout>
-      <Head title="Contact" />
+      <SiteHead title="Contact" />
       <h1>Contact</h1>
       <h2>Call me at 123-456-7890!</h2>
       <p>
-        <a href="http://www.google.com" target="_blank">
+        <a href="http://www.google.com" target="_blank" rel="noreferrer">
           Here's my Google link
         </a>
       </p>
