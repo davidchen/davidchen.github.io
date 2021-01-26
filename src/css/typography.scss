@@ -1,35 +1,51 @@
 /* Eksell */
-
 @font-face {
-    font-family: "Eksell";
-    src: url("../fonts/Eksell Display Large.otf");
-    font-weight: normal;
+  font-family: "Eksell";
+  src: url("../fonts/Eksell Display Large.otf");
 }
 
 /* Circular */
-
 @font-face {
-    font-family: "Circular";
-    src: url("../fonts/Circular Std Book.ttf");
-    font-weight: normal;
+  font-family: "Circular";
+  src: url("../fonts/Circular Std Book.ttf");
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/Circular Std Bold.ttf");
 }
 
-@font-face {
-    font-family: "Circular";
-    src: url("../fonts/Circular Std Bold.ttf");
-    font-weight: bold;
+/* Inconsolata */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap");
+// font-family: "Inconsolata";
+
+/* DRY classes */
+// SERIF
+%serif-normal {
+  font-family: Eksell, serif;
+  font-weight: normal;
 }
-
-/* Avenir */
-
-@font-face {
-    font-family: "Avenir";
-    src: url("../fonts/AvenirLTStd-Book.otf");
-    font-weight: normal;
+// SANS-SERIF
+%sans-serif-normal {
+  font-family: Circular, sans-serif;
+  font-weight: normal;
 }
-
-@font-face {
-    font-family: "Avenir";
-    src: url("../fonts/AvenirLTStd-Black.otf");
-    font-weight: bold;
+%sans-serif-bold {
+  font-family: Circular, sans-serif;
+  font-weight: bold;
+}
+// MONOSPACE
+%monospace-light {
+  font-family: Inconsolata, monospace;
+  font-weight: 300;
+  letter-spacing: -0.01rem;
+}
+%monospace-normal {
+  font-family: Inconsolata, monospace;
+  font-weight: 400;
+  letter-spacing: -0.01rem;
+}
+%monospace-bold {
+  font-family: Inconsolata, monospace;
+  font-weight: 700;
+  letter-spacing: -0.01rem;
 }

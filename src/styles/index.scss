@@ -1,15 +1,33 @@
 // GLOBAL STYLE FOR WHOLE APP
 
-@import "../css/typography";  // imports all the local fonts defined in typography.scss
-@import "../css/colors";  // imports all the colors for our app
+@import "../css/typography"; // imports all the local fonts defined in typography.scss
+@import "../css/colors"; // imports all the colors for our app
 
-* {  // default font across everything
-  font-family: Circular, sans-serif;
-  font-weight: bold;
+* {
+  // default font across everything
+  @extend %sans-serif-bold;
 }
 
 p {
-  font-weight: normal;
+  @extend %monospace-normal;
+}
+
+// GLOBALS
+.portfolio-button {
+  padding: 1rem 2rem;
+  background: none;
+  color: $primary-600;
+  border: 1px solid $primary-600;
+  border-radius: 0.5rem;
+
+  p {
+    @extend %sans-serif-normal;
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: $primary-100;
+  }
 }
 
 // LOGOBAR STYLES
@@ -23,30 +41,21 @@ p {
   padding: 5px 15px;
   border: 1px white solid;
   border-radius: 5%;
-  &:hover {
-    color: white;
-    background-color: $primary-600;
-    border-color: $primary-600;
-  }
-  .nav-link {
-    padding: 0;
-  }
 }
-
 .nav-button-active {
-  background-color: red;
+  background-color: $primary-600;
 }
-
 .nav-link {
-  font-size: 1.1rem;
-  font-family: Circular, sans-serif;
-  font-weight: bold;
+  font-size: 1rem;
+  font-family: Inconsolata, sans-serif;
+  //font-weight: norm;
   margin: 0;
-  padding: 0 0 5px 0;
-  color: $primary-300;
-
+  padding: 0 0 0 0;
+  color: $primary-400;
 }
-
+.nav-link-active {
+  color: white;
+}
 
 // CONTENT STYLES - all container rows should have 100vh
 .container-row {
@@ -56,20 +65,29 @@ p {
 
 // [HERO]
 .hero-intro-hello {
-  font-family: Circular, sans-serif;
-  font-weight: bold;
-  color: $acc-red-400;
+  @extend %monospace-normal;
+  font-size: 1rem;
+  color: $neutral-700;
 }
 .hero-intro-name {
-  font-family: Eksell, serif;
-  font-size: 8rem;
+  @extend %sans-serif-bold;
+  letter-spacing: -0.25rem;
+  font-size: 6rem;
   color: $primary-600;
+  position: relative;
+  left: -0.4rem;
+}
+.hero-intro-desc {
+  @extend %sans-serif-bold;
+  font-size: 3.5rem;
+  letter-spacing: -0.1rem;
+  color: $primary-400;
 }
 .hero-intro-snippet {
-  font-family: Circular, sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: $primary-200;
+  @extend %monospace-normal;
+  font-size: 1.25rem;
+  color: $neutral-700;
+  line-height: 1.7rem;
 }
 
 // [ABOUT]

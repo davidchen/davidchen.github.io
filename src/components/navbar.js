@@ -38,7 +38,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll)
       window.removeEventListener("resize", handleHeightChange)
     }
-  }, [])
+  })
 
   return (
     <div className="sticky-top">
@@ -55,7 +55,13 @@ const Navbar = () => {
                   section === currentSection ? "nav-button-active" : ""
                 }`}
               >
-                <p className="nav-link">{section}</p>
+                <p
+                  className={`nav-link ${
+                    section === currentSection ? "nav-link-active" : ""
+                  }`}
+                >
+                  {section}
+                </p>
               </button>
               <br />
             </React.Fragment>
