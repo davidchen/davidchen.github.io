@@ -1,0 +1,23 @@
+{
+  "title": "My projects for my portfolio",
+  "content": [
+    {
+      "name": "Schedru",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eum itaque quo totam? Commodi eligendi eveniet minima officia perferendis perspiciatis.",
+      "imageURL": "http://via.placeholder.com/1600x900",
+      "techStack": ["Python", "Flask", "BS4", "JQuery"]
+    },
+    {
+      "name": "Schedru",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eum itaque quo totam? Commodi eligendi eveniet minima officia perferendis perspiciatis.",
+      "imageURL": "http://via.placeholder.com/1600x900",
+      "techStack": ["Python", "Flask", "BS4", "JQuery"]
+    },
+    {
+      "name": "Schedru",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eum itaque quo totam? Commodi eligendi eveniet minima officia perferendis perspiciatis.",
+      "imageURL": "http://via.placeholder.com/1600x900",
+      "techStack": ["Python", "Flask", "BS4", "JQuery"]
+    }
+  ]
+}
